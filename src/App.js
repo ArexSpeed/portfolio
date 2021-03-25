@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Project from './components/Project';
+import "./styles/Styles.scss";
 
 function App() {
   return (
