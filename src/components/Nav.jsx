@@ -21,19 +21,43 @@ const Nav = ({menuOpen,setMenuOpen}) => {
     <nav className="nav" ref={navRef}>
       <div className="nav-avatar" />
       <ul className="nav-menu">
-        <Link to="about" className="nav-link" >
+        <Link 
+          to="about" 
+          smooth={true}
+          duration={500} 
+          spy={true}
+          className="nav-link"
+         >
           <div className="nav-link-line"></div>
           <div className="nav-link-text">ABOUT</div>
         </Link>
-        <Link to="projects" className="nav-link" >
+        <Link 
+          to="projects" 
+          smooth={true}
+          duration={500} 
+          spy={true}
+          className="nav-link"
+         >
           <div className="nav-link-line"></div>
           <div className="nav-link-text">PROJECTS</div>
         </Link>
-        <Link to="skills" className="nav-link" >
+        <Link 
+          to="skills" 
+          smooth={true}
+          duration={500} 
+          spy={true}
+          className="nav-link"
+         >
           <div className="nav-link-line"></div>
           <div className="nav-link-text">SKILLS</div>
         </Link>
-        <Link to="contact" className="nav-link" >
+        <Link 
+          to="contact" 
+          smooth={true}
+          duration={500} 
+          spy={true}
+          className="nav-link"
+         >
           <div className="nav-link-line"></div>
           <div className="nav-link-text">CONTACT</div>
         </Link>
