@@ -1,16 +1,19 @@
 @import 'Var';
 .hero{
+  width: 100%;
+  min-height: 100vh;
   &-banner{
     width: 100%;
-    height: 400px;
+    height: 70vh;
     margin: 20px auto;
-    background: $black;
-  }
-  &-desc{
-    @include center-column;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 576px){
+      flex-direction: column;
+    }
     &-title{
-      @include center-row;
+      @include center-column;
+      flex: 1;
       justify-content: space-around;
       width: 100%;
     }
@@ -18,12 +21,12 @@
       @include center-column;
       cursor: pointer;
       &:hover{
-        & .hero-desc-name-one.name{
+        & .hero-banner-name-one.name{
           transition: all 0.25s ease-in-out;
           transform: translateZ(150px);
           text-shadow: 0 10px 5px rgba(0,0,0,0.5);
         }
-        & .hero-desc-name-two.software{
+        & .hero-banner-name-two.software{
           transition: all 0.25s ease-in-out;
           transform: translateZ(150px);
           text-shadow: -10px -10px 5px rgba(0,0,0,0.5);
@@ -34,6 +37,18 @@
         font-size: 95px;
         color: $primary;
         margin-bottom: -50px;
+        @media screen and (max-width: 1024px){
+          font-size: 75px;
+          margin-bottom: -35px;
+        }
+        @media screen and (max-width: 768px){
+          font-size: 55px;
+          margin-bottom: -30px;
+        }
+        @media screen and (max-width: 576px){
+          font-size: 45px;
+          margin-bottom: -25px;
+        }
         &.software{
           color: $secondary;
         }
@@ -41,16 +56,37 @@
       &-two{
         font-size: 75px;
         color: $secondary;
+        @media screen and (max-width: 1024px){
+          font-size: 55px;
+        }
+        @media screen and (max-width: 768px){
+          font-size: 35px;
+        }
+        @media screen and (max-width: 576px){
+          font-size: 30px;
+        }
         &.software{
           color: $primary;
           z-index: 2;
         }
       }
     }
-    &-info{
-      font-size: 25px;
-      margin: 20px;
-      color: $white;
+    &-img{
+      flex: 1;
+      width: 300px;
+      height: 300px;
+      
+    }
+  }
+  &-desc{
+    font-size: 25px;
+    margin: 20px;
+    color: $white;
+    @media screen and (max-width: 768px){
+      font-size: 20px;
+    }
+    @media screen and (max-width: 576px){
+      font-size: 18px;
     }
   }
 }
