@@ -1,15 +1,16 @@
-import {useRef} from 'react'
+import {useState,useRef} from 'react'
 import {Link} from 'react-scroll'
 import { IoIosArrowBack } from 'react-icons/io';
 
 
-const Nav = () => {
+const Nav = ({menuOpen,setMenuOpen}) => {
   const buttonRef = useRef(null)
   const navRef = useRef(null)
 
   const toggle = () => {
     buttonRef.current.classList.toggle('active')
     navRef.current.classList.toggle('hide')
+    setMenuOpen(!menuOpen)
   }
 
   return (

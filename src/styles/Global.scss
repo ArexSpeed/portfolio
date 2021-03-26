@@ -7,4 +7,29 @@
 body{
   background: $bg;
   font-family: $font-family;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+.container{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 2.5s;
+  &.margin{
+   margin-left: 50px;
+   max-width: calc(100vw - 50px);
+  transition: all 0.5s ease-in-out;
+  } 
+}
+.section-title{
+  @include center-row;
+  width: 100%;
+  &-text{
+    font-size: 50px;
+    color: $white;
+    padding: 10px;
+    border-bottom: 5px solid $primary;
+  }
 }

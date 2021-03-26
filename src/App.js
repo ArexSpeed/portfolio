@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Home from './components/Home';
 import Nav from './components/Nav';
@@ -5,13 +6,17 @@ import Project from './components/Project';
 import "./styles/Styles.scss";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(true)
   return (
     <Router>
-      <Nav />
+      <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Switch>
-        <Route to="/" exact component={Home} />
-        <Route to="/project/:id" exact component={Project} />
-
+        <Route path="/" exact>
+          <Home menuOpen={menuOpen} />
+        </Route>
+        <Route path="/project/:id" exact>
+          <Project menuOpen={menuOpen} />
+        </Route>
       </Switch>
     </Router>
   );
