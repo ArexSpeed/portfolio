@@ -20,10 +20,22 @@ const Nav = () => {
     <nav className="nav" ref={navRef}>
       <div className="nav-avatar" />
       <ul className="nav-menu">
-        <Link to="about" className="nav-link" ><div className="nav-link-line"></div>ABOUT</Link>
-        <Link to="about" className="nav-link"><div className="nav-link-line"></div>PROJECTS</Link>
-        <Link to="about" className="nav-link"><div className="nav-link-line"></div>SKILLS</Link>
-        <Link to="about" className="nav-link"><div className="nav-link-line"></div>CONTACT</Link>
+        <Link to="about" className="nav-link" >
+          <div className="nav-link-line"></div>
+          <div className="nav-link-text">ABOUT</div>
+        </Link>
+        <Link to="projects" className="nav-link" >
+          <div className="nav-link-line"></div>
+          <div className="nav-link-text">PROJECTS</div>
+        </Link>
+        <Link to="skills" className="nav-link" >
+          <div className="nav-link-line"></div>
+          <div className="nav-link-text">SKILLS</div>
+        </Link>
+        <Link to="contact" className="nav-link" >
+          <div className="nav-link-line"></div>
+          <div className="nav-link-text">CONTACT</div>
+        </Link>
       </ul>
     </nav>
     </>
