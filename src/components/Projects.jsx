@@ -1,6 +1,5 @@
-import React from 'react'
-import {AiFillStar} from 'react-icons/ai'
-import {SiSass} from 'react-icons/si'
+import React from 'react' 
+import Project from './Project'
 
 const Projects = () => {
   return (
@@ -14,25 +13,7 @@ const Projects = () => {
         </h1> 
       </section>
       <section className="projects-boxes">
-        <article className="projects-box">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <div className="projects-box-logo">
-              <AiFillStar />
-          </div>
-          <div className="projects-box-info">
-            <div className="projects-box-info-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non quibusdam cum velit beatae assumenda vel odio, error quos porro. Nesciunt nulla aliquam quasi amet accusantium sapiente atque quaerat? Aliquid.
-            </div>
-            <div className="projects-box-info-buttons">
-              <SiSass className="projects-box-info-icon" />
-              <button className="projects-box-info-button">More</button>
-              <button className="projects-box-info-button">Site</button>
-            </div>
-          </div>
-        </article>
+        <Project />
         
       </section>
     </div>

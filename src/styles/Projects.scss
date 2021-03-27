@@ -99,6 +99,7 @@
       }
     }
     &-logo{
+      @include center-column;
       flex: 1;
       padding: 20px;
     }
@@ -110,39 +111,77 @@
       flex-direction: column;
       justify-content: space-between;
       &-buttons{
+        display: flex;
+        flex-direction: row;
         text-align: right;
       }
-      &-icon{
-        color: $white;
-        &:hover{
-          color: $primary;
-        }
-      }
       &-button{
-        border: none;
-        font-size: 20px;
-        padding: 10px;
-        background: none;
-        color: $white;
-        cursor: pointer;
-        z-index: 3;
+        @include center-column;
         position: relative;
-        transition: all 0.5s ease-in-out;
-        &::before{
-          position: absolute;
-          content: '';
-          bottom: 0;
-          left: 0;
-          width: 0;
-          height: 1px;
-
+        transition: 2.5s ease-in-out;
+        width: 30px;
+        height: 30px;
+        margin: auto 10px;
+        cursor: pointer;
+        &:hover{
+          & .projects-box-info-button-icon{
+            color: $primary;
+            top: -10px;
+            z-index: 2;
+            transition: all 0.5s ease-in-out;
+          }
+          & .projects-box-info-button-name{
+            visibility: visible;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            transition: all 0.5s ease-in-out;
+            color: $primary;
+          }
         }
-        &:hover::before{
-          width: 100%;
-          background: $primary;
+        &-icon{
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: $white;
           transition: all 0.5s ease-in-out;
         }
+        &-name{
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all 0.5s ease-in-out;
+          visibility: hidden;
+          color: $white;
+        }
       }
+      // &-button{
+      //   border: none;
+      //   font-size: 20px;
+      //   padding: 10px;
+      //   background: none;
+      //   color: $white;
+      //   cursor: pointer;
+      //   z-index: 3;
+      //   position: relative;
+      //   transition: all 0.5s ease-in-out;
+      //   &::before{
+      //     position: absolute;
+      //     content: '';
+      //     bottom: 0;
+      //     left: 0;
+      //     width: 0;
+      //     height: 1px;
+
+      //   }
+      //   &:hover::before{
+      //     width: 100%;
+      //     background: $primary;
+      //     transition: all 0.5s ease-in-out;
+      //   }
+      // }
     }
   }
 }
