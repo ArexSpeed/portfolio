@@ -21,6 +21,10 @@
     color: $white;
     position: relative;
     overflow: hidden;
+    @media screen and (max-width: 768px){
+      @include center-column;
+      height: 600px;
+    }
     &::after{
       position: absolute;
       content: '';
@@ -31,6 +35,10 @@
       height: 80%;
       box-shadow: 0 0px 10px 0 $primary;
       background: $primary;
+      @media screen and (max-width: 768px){
+        width: 80%;
+        height: 2px;
+      }
     }
     &::before{
       position: absolute;
@@ -41,6 +49,11 @@
       height: 100%;
       background: rgba(0,0,0,.2);
       z-index: -1;
+      @media screen and (max-width: 768px){
+        top: 50%;
+        left: 0;
+        width: 100%;
+      }
     }
     //hover to line box
     &:hover{
@@ -190,6 +203,9 @@
   @include center-column;
   &-logo{
     max-width: 80%;
+    @media screen and (max-width: 768px){
+      max-width: 70%;
+    }
   }
   &-button{
     margin-top: 30px;
