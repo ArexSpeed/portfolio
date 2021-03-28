@@ -1,11 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {AiFillStar} from 'react-icons/ai'
 import {SiSass} from 'react-icons/si'
 import {SiReact} from 'react-icons/si'
 import {BiShow} from 'react-icons/bi'
+import {GiReturnArrow} from 'react-icons/gi'
+import logo_axoffice from '../images/logolight.png'
+import screen_axoffice from '../images/budgetsdark.png'
+
+
+import ReactCardFlip from 'react-card-flip';
 
 const Project = () => {
+  const [flipped, setFlipped] = useState(false)
   const logo = <SiSass className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
+
   return (
     <article className="projects-box">
           <span></span>
@@ -13,7 +21,22 @@ const Project = () => {
           <span></span>
           <span></span>
           <div className="projects-box-logo">
-              <AiFillStar />
+          <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
+          <div className="flip">
+          <img src={logo_axoffice} alt="" className="flip-logo" />
+          <button onClick={() => setFlipped(!flipped)} className="flip-button">
+            <GiReturnArrow className="flip-button-icon"/>
+          </button>
+          </div>
+
+          <div className="flip">
+          <img src={screen_axoffice} alt="" className="flip-logo"/>
+          <button onClick={() => setFlipped(!flipped)} className="flip-button">
+            <GiReturnArrow className="flip-button-icon"/>
+          </button>
+          </div>
+          </ReactCardFlip>
+              {/* <AiFillStar /> */}
           </div>
           <div className="projects-box-info">
             <div className="projects-box-info-text">

@@ -185,3 +185,23 @@
     }
   }
 }
+
+.flip{
+  @include center-column;
+  &-logo{
+    max-width: 80%;
+  }
+  &-button{
+    margin-top: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    &:focus{
+      outline: 0;
+    }
+    &-icon{
+      font-size: 30px;
+      color: $primary;
+    }
+  }
+}
