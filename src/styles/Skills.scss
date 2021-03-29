@@ -7,13 +7,30 @@
   &-circle{
     width: 600px;
     height: 600px;
-    margin: 30px auto;
+    margin: 40px auto;
     border: none;
     border-radius: 600px;
     background: transparent;
     border: 10px solid $primary;
     box-shadow: 0 0 10px $primary;
     position: relative;
+    &-text{
+      @include center-column;
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 400px;
+      text-align: center;
+      color: $white;
+      background: $bg;
+      z-index: 50;
+      & h3{
+        color: $primary;
+      }
+    }
   }
 
   &-button{
@@ -32,77 +49,74 @@
     align-items: center;
     color: $primary;
     visibility: hidden;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
     &.active{
-      transition: 1s ease-in-out;
+      transition: 0.5s ease-in-out;
       visibility: visible;
-      &:last-child,
-      &:nth-last-child(9),
-      &:nth-last-child(17){
-        top: -5px; //circle + border
-        color: yellow;
-        transition: 0.5s ease-in-out;
-      }
       &:nth-last-child(2),
       &:nth-last-child(10),
       &:nth-last-child(18){
-        top: calc(15% - 5px);
-        left: 85%;
-        color: blue;
+        top: -5px; //circle + border
         transition: 0.5s ease-in-out;
-        transition-delay: 0.1s;
       }
       &:nth-last-child(3),
       &:nth-last-child(11),
       &:nth-last-child(19){
-        left: calc(100% + 5px);
-        color: red;
+        top: calc(15% - 5px);
+        left: 85%;
         transition: 0.5s ease-in-out;
-        transition-delay: 0.2s;
+        transition-delay: 0.1s;
       }
       &:nth-last-child(4),
       &:nth-last-child(12),
       &:nth-last-child(20){
-        top: calc(85% + 5px);
-        left: 85%;
-        color: white;
+        left: calc(100% + 5px);
         transition: 0.5s ease-in-out;
-        transition-delay: 0.3s;
+        transition-delay: 0.2s;
       }
       &:nth-last-child(5),
       &:nth-last-child(13),
       &:nth-last-child(21){
-        top: calc(100% + 5px);
-        color: purple;
+        top: calc(85% + 5px);
+        left: 85%;
         transition: 0.5s ease-in-out;
-        transition-delay: 0.4s;
+        transition-delay: 0.3s;
       }
       &:nth-last-child(6),
       &:nth-last-child(14),
       &:nth-last-child(22){
-        top: calc(85% + 5px);
-        left: calc(15% - 5px);
-        color: aqua;
+        top: calc(100% + 5px);
         transition: 0.5s ease-in-out;
-        transition-delay: 0.5s;
+        transition-delay: 0.4s;
       }
       &:nth-last-child(7),
       &:nth-last-child(15),
       &:nth-last-child(23){
-        top: 50%;
-        left: 0;
-        color: pink;
+        top: calc(85% + 5px);
+        left: calc(15% - 5px);
         transition: 0.5s ease-in-out;
-        transition-delay: 0.6s;
+        transition-delay: 0.5s;
       }
       &:nth-last-child(8),
       &:nth-last-child(16),
       &:nth-last-child(24){
+        top: 50%;
+        left: 0;
+        transition: 0.5s ease-in-out;
+        transition-delay: 0.6s;
+      }
+      &:nth-last-child(9),
+      &:nth-last-child(17),
+      &:nth-last-child(25){
         top: calc(15% - 5px);
         left: 15%;
-        color: orange;
         transition: 0.5s ease-in-out;
         transition-delay: 0.7s;
+      }
+      &:hover .skills-button-text{
+        opacity: 1;
+        color: $white;
       }
     }
     &-text{

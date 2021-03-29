@@ -11,8 +11,13 @@ import {BiMessageCheck} from 'react-icons/bi'
 
 
 const Skills = () => {
+  const titleStart = 'Skill wheel'
+  const descStart = 'Select a skill and read the description to find out what I know about the technology and what I use it for. Here I present my skills related to creating both frontend and backend side while building an application. And also my strong soft skills that help me to work effectively in all situations '
+ 
   const [skill, setSkill] = useState('Frontend')
-  return (
+  const [title, setTitle] = useState(titleStart)
+  const [desc, setDesc] = useState(descStart)
+   return (
     <div className="skills" id="skills">
 
       <section className="section-title next">
@@ -51,7 +56,13 @@ const Skills = () => {
           <SiHtml5 style={{ fontSize: 40 }} />
           <p className="skills-button-text">HTML</p>
         </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("React")
+              setDesc("Opis do Reacta co umiem i co powinienem jeszcze sie nauczyc jakie moga byc aplikacja zwiazane z tym frameworkiem")
+          }}
+        >
           <SiReact style={{ fontSize: 40 }} />
           <p className="skills-button-text">React</p>
         </div>
@@ -125,17 +136,40 @@ const Skills = () => {
           <p className="skills-button-text">Managment</p>
         </div>
 
+        <article className="skills-circle-text">
+          <h3>{title}</h3>
+          <p>{desc}</p>
+        </article>
+
       </section>
       <section className="skills-select">
-          <button className="skills-select-button" onClick={() => setSkill('Frontend')}>
+          <button 
+            className="skills-select-button" 
+            onClick={() => {
+              setSkill('Frontend')
+              setTitle(titleStart)
+              setDesc(descStart)
+            }}>
               <h3 className="skills-select-button-up"><div className="skills-select-button-circle"></div>FRONTEND</h3>
               <h4 className="skills-select-button-down">DESIGN</h4>
           </button>
-          <button className="skills-select-button" onClick={() => setSkill('Backend')}>
+          <button 
+            className="skills-select-button" 
+            onClick={() => {
+              setSkill('Backend')
+              setTitle(titleStart)
+              setDesc(descStart)
+            }}>
               <h3 className="skills-select-button-up middle"><div className="skills-select-button-circle middle"></div>BACKEND</h3>
               <h4 className="skills-select-button-down middle">DEPLOY</h4>
           </button>
-          <button className="skills-select-button" onClick={() => setSkill('Soft')}>
+          <button 
+            className="skills-select-button" 
+            onClick={() => {
+              setSkill('Soft')
+              setTitle(titleStart)
+              setDesc(descStart)
+            }}>
               <h3 className="skills-select-button-up"><div className="skills-select-button-circle"></div>SOFT</h3>
               <h4 className="skills-select-button-down">SKILLS</h4>
           </button>
