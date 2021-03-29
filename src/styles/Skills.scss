@@ -37,53 +37,68 @@
       transition: 1s ease-in-out;
       visibility: visible;
       &:last-child,
-      &:nth-last-child(9){
+      &:nth-last-child(9),
+      &:nth-last-child(17){
         top: -5px; //circle + border
         color: yellow;
         transition: 0.5s ease-in-out;
       }
-      &:nth-last-child(2){
+      &:nth-last-child(2),
+      &:nth-last-child(10),
+      &:nth-last-child(18){
         top: calc(15% - 5px);
         left: 85%;
         color: blue;
         transition: 0.5s ease-in-out;
         transition-delay: 0.1s;
       }
-      &:nth-last-child(3){
+      &:nth-last-child(3),
+      &:nth-last-child(11),
+      &:nth-last-child(19){
         left: calc(100% + 5px);
         color: red;
         transition: 0.5s ease-in-out;
         transition-delay: 0.2s;
       }
-      &:nth-last-child(4){
+      &:nth-last-child(4),
+      &:nth-last-child(12),
+      &:nth-last-child(20){
         top: calc(85% + 5px);
         left: 85%;
         color: white;
         transition: 0.5s ease-in-out;
         transition-delay: 0.3s;
       }
-      &:nth-last-child(5){
+      &:nth-last-child(5),
+      &:nth-last-child(13),
+      &:nth-last-child(21){
         top: calc(100% + 5px);
         color: purple;
         transition: 0.5s ease-in-out;
         transition-delay: 0.4s;
       }
-      &:nth-last-child(6){
+      &:nth-last-child(6),
+      &:nth-last-child(14),
+      &:nth-last-child(22){
         top: calc(85% + 5px);
-        left: 15%;
+        left: calc(15% - 5px);
         color: aqua;
         transition: 0.5s ease-in-out;
         transition-delay: 0.5s;
       }
-      &:nth-last-child(7){
+      &:nth-last-child(7),
+      &:nth-last-child(15),
+      &:nth-last-child(23){
         top: 50%;
         left: 0;
         color: pink;
         transition: 0.5s ease-in-out;
         transition-delay: 0.6s;
       }
-      &:nth-last-child(8){
-        top: calc(15% + 5px);
+      &:nth-last-child(8),
+      &:nth-last-child(16),
+      &:nth-last-child(24){
+        top: calc(15% - 5px);
         left: 15%;
         color: orange;
         transition: 0.5s ease-in-out;
