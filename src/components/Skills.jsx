@@ -17,9 +17,6 @@ const Skills = () => {
         </h1> 
       </section>
       <section className="skills-circle">
-        <div className="skills-center">
-
-        </div>
         {/* Frontend */}
         
         <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
@@ -56,7 +53,22 @@ const Skills = () => {
           <GiReturnArrow style={{ fontSize: 40 }} />
           <p className="skills-button-text">Sass</p>
         </div>
-       
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <GiReturnArrow style={{ fontSize: 40 }} />
+          <p className="skills-button-text">Sass</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <GiReturnArrow style={{ fontSize: 40 }} />
+          <p className="skills-button-text">Sass</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <GiReturnArrow style={{ fontSize: 40 }} />
+          <p className="skills-button-text">Sass</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <GiReturnArrow style={{ fontSize: 40 }} />
+          <p className="skills-button-text">Sass</p>
+        </div>
       </section>
       <section className="skills-select">
           <button onClick={() => setSkill('Frontend')}>Frontend</button>
