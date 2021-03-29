@@ -126,10 +126,19 @@ const Skills = () => {
         </div>
 
       </section>
-      <section className="skills-select" style={{marginBottom: '50px'}}>
-          <button onClick={() => setSkill('Frontend')}>Frontend</button>
-          <button onClick={() => setSkill('Backend')}>Backend</button>
-          <button onClick={() => setSkill('Soft')}>Soft Skill</button>
+      <section className="skills-select">
+          <button className="skills-select-button" onClick={() => setSkill('Frontend')}>
+              <h3 className="skills-select-button-up"><div className="skills-select-button-circle"></div>FRONTEND</h3>
+              <h4 className="skills-select-button-down">DESIGN</h4>
+          </button>
+          <button className="skills-select-button" onClick={() => setSkill('Backend')}>
+              <h3 className="skills-select-button-up middle"><div className="skills-select-button-circle middle"></div>BACKEND</h3>
+              <h4 className="skills-select-button-down middle">DEPLOY</h4>
+          </button>
+          <button className="skills-select-button" onClick={() => setSkill('Soft')}>
+              <h3 className="skills-select-button-up"><div className="skills-select-button-circle"></div>SOFT</h3>
+              <h4 className="skills-select-button-down">SKILLS</h4>
+          </button>
       </section>
     </div>
   )
