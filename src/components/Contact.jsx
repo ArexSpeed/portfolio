@@ -26,7 +26,7 @@ const Contact = () => {
       <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
-      <input className="contact-form-button" type="submit" value="Send" />
+      <button className="contact-form-button" type="submit">Send</button>
     </form>
     <section className="contact-icons">
       <a href="#" target="_blank">

@@ -176,6 +176,11 @@ const Skills = () => {
         </article>
 
       </section>
+
+      <section className="skills-circle-text-mobile">
+          <h3>{title}</h3>
+          <p>{desc}</p>
+        </section>
       
     </div>
   )
