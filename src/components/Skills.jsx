@@ -25,123 +25,7 @@ const Skills = () => {
           MY SKILLS
         </h1> 
       </section>
-      <section className="skills-circle">
-        
-        {/* Frontend */}
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
-          <SiNextDotJs style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Next.js</p>
-        </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
-          <SiFigma style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Figma</p>
-        </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
-          <SiInkscape style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Inkscape</p>
-        </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
-          <SiBootstrap style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Bootstrap</p>
-        </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
-          <SiJavascript style={{ fontSize: 40 }} />
-          <p className="skills-button-text">JavaScript</p>
-        </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
-          <SiSass style={{ fontSize: 40 }} />
-          <p className="skills-button-text">CSS</p>
-        </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
-          <SiHtml5 style={{ fontSize: 40 }} />
-          <p className="skills-button-text">HTML</p>
-        </div>
-        <div
-          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
-          onClick={() => {
-              setTitle("React")
-              setDesc("Opis do Reacta co umiem i co powinienem jeszcze sie nauczyc jakie moga byc aplikacja zwiazane z tym frameworkiem")
-          }}
-        >
-          <SiReact style={{ fontSize: 40 }} />
-          <p className="skills-button-text">React</p>
-        </div>
-        
-       {/* Backend */}
-        
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
-          <GiDatabase style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Database</p>
-        </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
-          <SiGithub style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Github</p>
-        </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
-          <SiWordpress style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Wordpress</p>
-        </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
-          <SiHeroku style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Heroku</p>
-        </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
-          <SiFirebase style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Firebase</p>
-        </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
-          <SiPhp style={{ fontSize: 40 }} />
-          <p className="skills-button-text">PHP</p>
-        </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
-          <SiMongodb style={{ fontSize: 40 }} />
-          <p className="skills-button-text">MongoDB</p>
-        </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
-          <SiNodeDotJs style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Node</p>
-        </div>
 
-        {/* SoftSkill */}
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
-          <BiMessageCheck style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Problem solve</p>
-        </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
-          <FaHandsHelping style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Negotiate</p>
-        </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
-          <ImBubbles style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Comunication</p>
-        </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
-          <HiLightBulb style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Creativity</p>
-        </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
-          <GiOppression style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Working under pressure</p>
-        </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
-          <RiTeamFill style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Team working</p>
-        </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
-          <GiFlexibleStar style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Flexibility</p>
-        </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
-          <ImUserTie style={{ fontSize: 40 }} />
-          <p className="skills-button-text">Managment</p>
-        </div>
-
-        <article className="skills-circle-text">
-          <h3>{title}</h3>
-          <p>{desc}</p>
-        </article>
-
-      </section>
       <section className="skills-select">
           <button 
             className="skills-select-button" 
@@ -174,6 +58,125 @@ const Skills = () => {
               <h4 className="skills-select-button-down">SKILLS</h4>
           </button>
       </section>
+
+      <section className="skills-circle">
+        
+        {/* Frontend */}
+        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+          <SiNextDotJs className="skills-button-icon"/>
+          <p className="skills-button-text">Next.js</p>
+        </div>
+        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+          <SiFigma className="skills-button-icon" />
+          <p className="skills-button-text">Figma</p>
+        </div>
+        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+          <SiInkscape className="skills-button-icon" />
+          <p className="skills-button-text">Inkscape</p>
+        </div>
+        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+          <SiBootstrap className="skills-button-icon" />
+          <p className="skills-button-text">Bootstrap</p>
+        </div>
+        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+          <SiJavascript className="skills-button-icon" />
+          <p className="skills-button-text">JavaScript</p>
+        </div>
+        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+          <SiSass className="skills-button-icon" />
+          <p className="skills-button-text">CSS</p>
+        </div>
+        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+          <SiHtml5 className="skills-button-icon" />
+          <p className="skills-button-text">HTML</p>
+        </div>
+        <div
+          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("React")
+              setDesc("Opis do Reacta co umiem i co powinienem jeszcze sie nauczyc jakie moga byc aplikacja zwiazane z tym frameworkiem")
+          }}
+        >
+          <SiReact className="skills-button-icon" />
+          <p className="skills-button-text">React</p>
+        </div>
+        
+       {/* Backend */}
+        
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <GiDatabase className="skills-button-icon" />
+          <p className="skills-button-text">Database</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <SiGithub className="skills-button-icon" />
+          <p className="skills-button-text">Github</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <SiWordpress className="skills-button-icon" />
+          <p className="skills-button-text">Wordpress</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <SiHeroku className="skills-button-icon" />
+          <p className="skills-button-text">Heroku</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <SiFirebase className="skills-button-icon" />
+          <p className="skills-button-text">Firebase</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <SiPhp className="skills-button-icon" />
+          <p className="skills-button-text">PHP</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <SiMongodb className="skills-button-icon" />
+          <p className="skills-button-text">MongoDB</p>
+        </div>
+        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+          <SiNodeDotJs className="skills-button-icon" />
+          <p className="skills-button-text">Node</p>
+        </div>
+
+        {/* SoftSkill */}
+        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+          <BiMessageCheck className="skills-button-icon" />
+          <p className="skills-button-text">Problem solve</p>
+        </div>
+        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+          <FaHandsHelping className="skills-button-icon" />
+          <p className="skills-button-text">Negotiate</p>
+        </div>
+        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+          <ImBubbles className="skills-button-icon" />
+          <p className="skills-button-text">Comunication</p>
+        </div>
+        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+          <HiLightBulb className="skills-button-icon" />
+          <p className="skills-button-text">Creativity</p>
+        </div>
+        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+          <GiOppression className="skills-button-icon" />
+          <p className="skills-button-text">Working under pressure</p>
+        </div>
+        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+          <RiTeamFill className="skills-button-icon" />
+          <p className="skills-button-text">Team working</p>
+        </div>
+        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+          <GiFlexibleStar className="skills-button-icon" />
+          <p className="skills-button-text">Flexibility</p>
+        </div>
+        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+          <ImUserTie className="skills-button-icon" />
+          <p className="skills-button-text">Managment</p>
+        </div>
+
+        <article className="skills-circle-text">
+          <h3>{title}</h3>
+          <p>{desc}</p>
+        </article>
+
+      </section>
+      
     </div>
   )
 }

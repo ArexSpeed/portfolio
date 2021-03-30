@@ -32,7 +32,7 @@
     }
     &.active{
       transform: rotate(180deg);
-      transition: 2s ease-in-out;
+      transition: 1s ease-in-out;
     }
     &:focus{
       outline: none;
@@ -52,22 +52,22 @@
   &.hide{
     transform: translateX(-100%);
     transition: 0.5s ease-in-out;
-    transition-delay: 2s;
+    transition-delay: 1s;
     & .nav-link{
         transform: translateX(-100%);
         transition: 0.5s ease-in-out;
         opacity: 0;
       &:nth-child(1){
-        transition-delay: 2s;
-      }
-      &:nth-child(2){
-        transition-delay: 1.5s;
-      }
-      &:nth-child(3){
         transition-delay: 1s;
       }
-      &:nth-child(4){
+      &:nth-child(2){
+        transition-delay: 0.75s;
+      }
+      &:nth-child(3){
         transition-delay: 0.5s;
+      }
+      &:nth-child(4){
+        transition-delay: 0.25s;
       }
     }
   }
@@ -93,16 +93,16 @@
     transition: 0.5s ease-in-out;
     cursor: pointer;
     &:nth-child(1){
-      transition-delay: 0.5s;
+      transition-delay: 0.25s;
     }
     &:nth-child(2){
-      transition-delay: 1s;
+      transition-delay: 0.5s;
     }
     &:nth-child(3){
-      transition-delay: 1.5s;
+      transition-delay: 0.75s;
     }
     &:nth-child(4){
-      transition-delay: 2s;
+      transition-delay: 1s;
     }
     &:hover{
       & .nav-link-line{

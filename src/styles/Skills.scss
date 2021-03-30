@@ -4,16 +4,25 @@
   min-height: 100vh;
   background: $bg;
   @include center-column;
+  
   &-circle{
     width: 600px;
     height: 600px;
     margin: 40px auto;
     border: none;
-    border-radius: 600px;
+    border-radius: 50%;
     background: transparent;
     border: 10px solid $primary;
     box-shadow: 0 0 10px $primary;
     position: relative;
+    @media screen and (max-width: 768px){
+      width: 300px;
+      height: 300px;
+    }
+    @media screen and (max-width: 540px){
+      width: 200px;
+      height: 200px;
+    }
     &-text{
       @include center-column;
       position: absolute;
@@ -27,6 +36,15 @@
       color: $white;
       background: $bg;
       z-index: 50;
+      @media screen and (max-width: 768px){
+       top: 450px;
+       width: 100%;
+       height: auto;
+       border-radius: 0;
+      }
+      @media screen and (max-width: 540px){
+        top: 400px;
+       }
       & h3{
         color: $primary;
       }
@@ -37,7 +55,7 @@
     position: absolute;
     width: 70px;
     height: 70px;
-    border-radius: 70px;
+    border-radius: 50%;
     border: 5px solid $primary;
     background: $bg;
     top: 50%;
@@ -51,6 +69,11 @@
     visibility: hidden;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    @media screen and (max-width: 540px){
+      width: 50px;
+      height: 50px;
+      border: 3px solid $primary;
+    }
     &.active{
       transition: 0.5s ease-in-out;
       visibility: visible;
@@ -119,12 +142,22 @@
         color: $white;
       }
     }
+    &-icon{
+      font-size: 40px;
+      @media screen and (max-width: 540px){
+        font-size: 30px;
+      }
+    }
     &-text{
       position: absolute;
       top: 70px;
       font-weight: bold;
       opacity: 0;
       transition: all 0.5s ease-in;
+      z-index: 100;
+      @media screen and (max-width: 540px){
+        font-size: 12px;
+      }
     }
     
   }
@@ -139,6 +172,12 @@
       background: transparent;
       border: none;
       cursor: pointer;
+      @media screen and (max-width: 768px){
+        height: 100px;
+      }
+      @media screen and (max-width: 540px){
+        height: 70px;
+      }
       &:focus{
         outline: 0;
       }
@@ -155,6 +194,18 @@
         color: $primary;
         margin-bottom: -30px;
         position: relative;
+        @media screen and (max-width: 1250px){
+          font-size: 45px;
+          margin-bottom: -25px;
+        }
+        @media screen and (max-width: 768px){
+          font-size: 30px;
+          margin-bottom: -15px;
+        }
+        @media screen and (max-width: 540px){
+          font-size: 18px;
+          margin-bottom: -10px;
+        }
         &.middle{
           color: $white;
         }
@@ -162,6 +213,15 @@
       &-down{
         font-size: 45px;
         color: $secondary;
+        @media screen and (max-width: 1250px){
+          font-size: 35px;
+        }
+        @media screen and (max-width: 768px){
+          font-size: 25px;
+        }
+        @media screen and (max-width: 540px){
+          font-size: 15px;
+        }
         &.middle{
           color: rgba(255,255,255,.75)
         }
@@ -170,11 +230,18 @@
         position: absolute;
         width: 40px;
         height: 40px;
-        border-radius: 40px;
+        border-radius: 50%;
         background: $primary;
         box-shadow: 0 0 10px $primary;
         top: 50%;
         left: 5%;
+        @media screen and (max-width: 1250px){
+          width: 30px;
+          height: 30px;
+        }
+        @media screen and (max-width: 998px){
+          display: none;
+        }
         &.middle{
           background: $white;
           box-shadow: 0 0 10px $white;
