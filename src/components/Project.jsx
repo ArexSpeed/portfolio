@@ -4,11 +4,12 @@ import {SiSass} from 'react-icons/si'
 import {SiReact} from 'react-icons/si'
 import {BiShow} from 'react-icons/bi'
 import {GiReturnArrow} from 'react-icons/gi'
-import logo_axoffice from '../images/logolight.png'
-import screen_axoffice from '../images/budgetsdark.png'
+import aleague1 from '../images/aleague1.png'
+import aleague2 from '../images/aleague2.png'
+import aleague3 from '../images/aleague3.png'
+import aleague4 from '../images/aleague4.png'
 
 
-import ReactCardFlip from 'react-card-flip';
 
 const Project = () => {
   const [flipped, setFlipped] = useState(false)
@@ -21,7 +22,8 @@ const Project = () => {
           <span></span>
           <span></span>
           <div className="projects-box-logo">
-          <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
+
+          {/* <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
           <div className="flip">
           <img src={logo_axoffice} alt="" className="flip-logo" />
           <button onClick={() => setFlipped(!flipped)} className="flip-button">
@@ -35,7 +37,7 @@ const Project = () => {
             <GiReturnArrow className="flip-button-icon"/>
           </button>
           </div>
-          </ReactCardFlip>
+          </ReactCardFlip> */}
               {/* <AiFillStar /> */}
           </div>
           <div className="projects-box-info">

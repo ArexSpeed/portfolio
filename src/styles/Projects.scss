@@ -203,6 +203,7 @@
   @include center-column;
   &-logo{
     max-width: 80%;
+    max-height: 300px !important;
     @media screen and (max-width: 768px){
       max-width: 70%;
     }
