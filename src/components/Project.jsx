@@ -6,6 +6,7 @@ import aleague1 from '../images/aleague1.png'
 import aleague2 from '../images/aleague2.png'
 import aleague3 from '../images/aleague3.png'
 import aleague4 from '../images/aleague4.png'
+import aleaguel from '../images/aleaguel.png'
 import sps4 from '../images/sps4.jpg'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -29,7 +30,10 @@ const Project = () => {
                     <img src={aleague2} alt="" style={{maxWidth: '400px'}}/>
                 </div>
                 <div>
-                    <img src={aleague4} alt="" style={{maxWidth: '100px'}}/>
+                    <img src={aleague3} alt="" style={{maxWidth: '400px'}}/>
+                </div>
+                <div>
+                    <img src={sps4} alt="" style={{maxWidth: '100px'}}/>
                 </div>
                 <div>
                     <img src={sps4} alt="" style={{maxWidth: '100px'}}/>
@@ -39,8 +43,12 @@ const Project = () => {
           </div>
 
           <div className="projects-box-info">
+            <div className="projects-box-info-logo">
+              <img src={aleaguel} alt=""/> <h4> ALeague</h4>
+            </div>
             <div className="projects-box-info-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non quibusdam cum velit beatae assumenda vel odio, error quos porro. Nesciunt nulla aliquam quasi amet accusantium sapiente atque quaerat? Aliquid.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus sit aliquam nisi, est obcaecati, quibusdam fuga accusantium itaque nobis voluptatem nulla placeat veniam unde deleniti illo quam? Enim velit illo nam libero mollitia quaerat ullam deserunt assumenda odit. Commodi a dignissimos tempore, voluptates itaque quam dolorum porro id repudiandae!
             </div>
             <div className="projects-box-info-buttons">
             <div className="projects-box-info-button">
@@ -55,10 +63,7 @@ const Project = () => {
               <BiShow className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
               <p className="projects-box-info-button-name">Site</p>
             </a>
-              {/* <SiSass className="projects-box-info-icon" />
-              
-              <button className="projects-box-info-button">More</button>
-              <button className="projects-box-info-button">Site</button> */}
+
             </div>
           </div>
         </article>
