@@ -1,18 +1,13 @@
 import {useState} from 'react'
-import {SiSass} from 'react-icons/si'
-import {SiReact} from 'react-icons/si'
+import {SiHtml5,SiSass,SiReact, SiJavascript, SiFigma, SiInkscape, SiBootstrap, SiNextDotJs,
+  SiNodeDotJs, SiFirebase, SiGithub, SiWordpress, SiPhp, SiMongodb, SiHeroku} 
+from 'react-icons/si'
+import {GiDatabase, GiOppression, GiFlexibleStar} from 'react-icons/gi'
 import {BiShow} from 'react-icons/bi'
-import aleague1 from '../images/aleague1.png'
-import aleague2 from '../images/aleague2.png'
-import aleague3 from '../images/aleague3.png'
-import aleague4 from '../images/aleague4.png'
-import aleaguel from '../images/aleaguel.png'
-import sps4 from '../images/sps4.jpg'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-const Project = () => {
-  const logo = <SiSass className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
+const Project = ({title, desc, images, logo, stacks}) => {
 
   return (
     <article className="projects-box">
@@ -24,19 +19,19 @@ const Project = () => {
 
           <Carousel showThumbs={false}>
                 <div>
-                    <img src={aleague1} alt="" style={{maxWidth: '400px'}}/>
+                    <img src={images[0]} alt="" style={{maxWidth: '400px'}}/>
                 </div>
                 <div>
-                    <img src={aleague2} alt="" style={{maxWidth: '400px'}}/>
+                    <img src={images[1]} alt="" style={{maxWidth: '400px'}}/>
                 </div>
                 <div>
-                    <img src={aleague3} alt="" style={{maxWidth: '400px'}}/>
+                    <img src={images[2]} alt="" style={{maxWidth: '400px'}}/>
                 </div>
                 <div>
-                    <img src={sps4} alt="" style={{maxWidth: '100px'}}/>
+                    <img src={images[3]} alt="" style={{maxWidth: '100px'}}/>
                 </div>
                 <div>
-                    <img src={sps4} alt="" style={{maxWidth: '100px'}}/>
+                    <img src={images[4]} alt="" style={{maxWidth: '100px'}}/>
                 </div>
             </Carousel>
 
@@ -44,24 +39,69 @@ const Project = () => {
 
           <div className="projects-box-info">
             <div className="projects-box-info-logo">
-              <img src={aleaguel} alt=""/> <h4> ALeague</h4>
+              <img src={logo} alt=""/> <h4> {title}</h4>
             </div>
             <div className="projects-box-info-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non quibusdam cum velit beatae assumenda vel odio, error quos porro. Nesciunt nulla aliquam quasi amet accusantium sapiente atque quaerat? Aliquid.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus sit aliquam nisi, est obcaecati, quibusdam fuga accusantium itaque nobis voluptatem nulla placeat veniam unde deleniti illo quam? Enim velit illo nam libero mollitia quaerat ullam deserunt assumenda odit. Commodi a dignissimos tempore, voluptates itaque quam dolorum porro id repudiandae!
-            </div>
+              {desc}
+             </div>
             <div className="projects-box-info-buttons">
-            <div className="projects-box-info-button">
-              {logo}
-              <p className="projects-box-info-button-name">Sass</p>
-            </div>
-            <div className="projects-box-info-button">
+              {stacks.map(stack => {
+                switch (stack) {
+                  case "React":
+                    return (
+                      <div className="projects-box-info-button">
+                        <SiReact
+                          className="projects-box-info-button-icon"
+                          style={{ fontSize: "25px" }}
+                        />
+                        <p className="projects-box-info-button-name">React</p>
+                      </div>
+                    );
+                  case "Sass":
+                    return (
+                      <div className="projects-box-info-button">
+                        <SiSass
+                          className="projects-box-info-button-icon"
+                          style={{ fontSize: "25px" }}
+                        />
+                        <p className="projects-box-info-button-name">Sass</p>
+                      </div>
+                    );
+                  case "Node":
+                    return (
+                      <div className="projects-box-info-button">
+                        <SiNodeDotJs
+                          className="projects-box-info-button-icon"
+                          style={{ fontSize: "25px" }}
+                        />
+                        <p className="projects-box-info-button-name">Node</p>
+                      </div>
+                    );
+                  default:
+                    return (
+                      <div className="projects-box-info-button">
+                        <GiFlexibleStar
+                          className="projects-box-info-button-icon"
+                          style={{ fontSize: "25px" }}
+                        />
+                        <p className="projects-box-info-button-name">Empty</p>
+                      </div>
+                    );
+                }
+              })}
+            
+            {/* <div className="projects-box-info-button">
               <SiReact className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
               <p className="projects-box-info-button-name">React</p>
-            </div>
+            </div> */}
+
             <a href="#" target="_blank" referrerPolicy="no-referrer" className="projects-box-info-button">
               <BiShow className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
               <p className="projects-box-info-button-name">Site</p>
+            </a>
+            <a href="#" target="_blank" referrerPolicy="no-referrer" className="projects-box-info-button">
+              <SiGithub className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
+              <p className="projects-box-info-button-name">Github</p>
             </a>
 
             </div>

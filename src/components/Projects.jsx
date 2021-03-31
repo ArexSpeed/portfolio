@@ -1,5 +1,6 @@
 import React from 'react' 
 import Project from './Project'
+import {projects} from './projectsData'
 
 const Projects = () => {
   return (
@@ -13,7 +14,10 @@ const Projects = () => {
         </h1> 
       </section>
       <section className="projects-boxes">
-        <Project />
+        {projects.map(project => (
+          <Project title={project.title} desc={project.desc} images={project.images} logo={project.logo} stacks={project.stacks} website={project.website} github={project.github}/>
+        ))}
+        {/* <Project /> */}
         
       </section>
     </div>
