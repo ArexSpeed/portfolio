@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import {SiHtml5,SiSass,SiReact, SiJavascript, SiFigma, SiInkscape, SiBootstrap, SiNextDotJs,
-        SiNodeDotJs, SiFirebase, SiGithub, SiWordpress, SiPhp, SiMongodb, SiHeroku} 
+        SiNodeDotJs, SiFirebase, SiGithub, SiWordpress, SiPhp, SiPostman, SiHeroku} 
 from 'react-icons/si'
 import {GiDatabase, GiOppression, GiFlexibleStar} from 'react-icons/gi'
 import {ImUserTie, ImBubbles} from 'react-icons/im'
@@ -62,31 +62,73 @@ const Skills = () => {
       <section className="skills-circle">
         
         {/* Frontend */}
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Next")
+              setDesc("Very enjoyable framework which currently I use to create a new blog. I know the use of SSR and I can create a basic API to app so that I can write a fully functional “fullstack” app in one framework.")
+          }}
+        >
           <SiNextDotJs className="skills-button-icon"/>
           <p className="skills-button-text">Next.js</p>
         </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Figma")
+              setDesc("Before I begin working on the code, it is a good idea to first design what I will be doing. Here Figma is helpful. I can design the visual part of application and testing how elements fit together and create prototypes and initial operation of given elements.")
+          }}
+        >
           <SiFigma className="skills-button-icon" />
           <p className="skills-button-text">Figma</p>
         </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Inkscape")
+              setDesc("Besides web app programming I like to create some graphic designs especially using vector graphics mainly different kinds of logotypes or business cards. All logos in my apps are made by me.")
+          }}
+        >
           <SiInkscape className="skills-button-icon" />
           <p className="skills-button-text">Inkscape</p>
         </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Bootstrap")
+              setDesc("Sometimes during work I use the ready-to-use library such as Bootstrap or Material Design to speed up my code development. Thanks to Bootstrap I can in an easy way create responsive apps and  efficiently add specific elements to websites such as carousels, sliders or dropdown lists.")
+          }}
+        >
           <SiBootstrap className="skills-button-icon" />
           <p className="skills-button-text">Bootstrap</p>
         </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("JavaScript")
+              setDesc("My main programming language. I can create apps either with VanillaJS and React. I can write JS apps with OOP and JS let me write new features for applications to static sites and also web games or computing programs. I really like to do a lot of operations on arrays.")
+          }}
+        >
           <SiJavascript className="skills-button-icon" />
           <p className="skills-button-text">JavaScript</p>
         </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("CSS")
+              setDesc("Styling is one of my favourite parts of FrontEnd work. I like to create and test different effects that CSS provides. I mostly use the sass preprocessor to build applications, thanks to features like mixins, loops or nesting working with css is more pleasant and efficient. I also like to use Styled-Components with React or module css.")
+          }}
+        >
           <SiSass className="skills-button-icon" />
           <p className="skills-button-text">CSS</p>
         </div>
-        <div className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("HTML")
+              setDesc("I can create layouts and good-looking websites with a lot of subsites and functions. I try to use as many as possible tags and new features that make working with HTML fatser and easier.")
+          }}
+        >
           <SiHtml5 className="skills-button-icon" />
           <p className="skills-button-text">HTML</p>
         </div>
@@ -94,7 +136,7 @@ const Skills = () => {
           className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
           onClick={() => {
               setTitle("React")
-              setDesc("Opis do Reacta co umiem i co powinienem jeszcze sie nauczyc jakie moga byc aplikacja zwiazane z tym frameworkiem")
+              setDesc("Currently my favourite technology to create web apps. I used React for most of my projects, I can use all of the basic hooks and create custom hooks. I use either Redux or ContextAPI to manage state depending on the size of the project. For my projects I use functional components, but if it is required to support older applications, there is no problem to write apps with the class component.")
           }}
         >
           <SiReact className="skills-button-icon" />
@@ -103,69 +145,165 @@ const Skills = () => {
         
        {/* Backend */}
         
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+       <div
+          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Database")
+              setDesc("Creating and configuring databases as well as working with SQL to select designated data and sort or configure it. I mostly use MongoDB as a database and Firestore, but I am also skilled in relational databases like MySQL and PostgreSQL.")
+          }}
+        >
           <GiDatabase className="skills-button-icon" />
           <p className="skills-button-text">Database</p>
         </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Github")
+              setDesc("The most important tools in a developer job. I use git to store my projects and their changelog so that if I make a mistake I can easily revert to the correct version, and I also use exercise files from courses I've taken so that I can easily go back and analyse a section.")
+          }}
+        >
           <SiGithub className="skills-button-icon" />
           <p className="skills-button-text">Github</p>
         </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Wordpress")
+              setDesc("I can create websites in Wordpress and install it on every server. Creation of page layouts using appropriate plug-ins and configuration of plug-ins according to the client's needs, such as better performance, SEO or custom tables.")
+          }}
+        >
           <SiWordpress className="skills-button-icon" />
           <p className="skills-button-text">Wordpress</p>
         </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Heroku")
+              setDesc("I use heroku to host applications developed in Node JS. I have learned the basic heroku CLI and I can deploy an API to heroku for use by other apps and also set environment variables  if it is necessary. However, heroku is not the only service on which I can host applications, I also use Netlify, Firebase or GithubPages. I have no problems using traditional servers, which I manage via FTP.")
+          }}
+        >
           <SiHeroku className="skills-button-icon" />
           <p className="skills-button-text">Heroku</p>
         </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Firebase")
+              setDesc("I use Firebase to host apps and also as a database by firestore, which is very useful for me thanks to real time function. Authentication with Firebase is also very comfortable to use for me. I can also set basic firebase rules for a firestore.")
+          }}
+        >
           <SiFirebase className="skills-button-icon" />
           <p className="skills-button-text">Firebase</p>
         </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("PHP")
+              setDesc("I have a basic knowledge of PHP, which let me create a CRUD app or simply ecommerce shop. I can connect php code with MySql database and secure a custom register or login form.")
+          }}
+        >
           <SiPhp className="skills-button-icon" />
           <p className="skills-button-text">PHP</p>
         </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
-          <SiMongodb className="skills-button-icon" />
-          <p className="skills-button-text">MongoDB</p>
+        <div
+          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Postman")
+              setDesc("I can test API created in Node e.g checking for correct operation the implementation of functions such GET, POST, PUT or DELETE. Setting the relevant environment variables for a specific project.")
+          }}
+        >
+          <SiPostman className="skills-button-icon" />
+          <p className="skills-button-text">Postman</p>
         </div>
-        <div className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Node")
+              setDesc("I use node together with express to create simple server applications. I can create an API with node and connect app with server. I like structured work in node  so in my applications I separate specific functions into categories like schema, routes or controllers.")
+          }}
+        >
           <SiNodeDotJs className="skills-button-icon" />
           <p className="skills-button-text">Node</p>
         </div>
 
         {/* SoftSkill */}
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Problem solve")
+              setDesc("If there is a problem I can focus on what is not functioning and then discuss to set an optimal goal and solution to the problem.")
+          }}
+        >
           <BiMessageCheck className="skills-button-icon" />
           <p className="skills-button-text">Problem solve</p>
         </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Negotiate")
+              setDesc("I can present myself and my offer favourably. I can control my emotions and always try to reach an agreement so that both parties are satisfied with the objective of the negotiation. I also have the ability to defuse various contentious situations within a team.")
+          }}
+        >
           <FaHandsHelping className="skills-button-icon" />
           <p className="skills-button-text">Negotiate</p>
         </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Comunication")
+              setDesc("I am an open and communicative person, sometimes too much so, but I try to express my messages clearly and lucidly. I am also a good listener, concentrating on what my conversation partner says so as to avoid any misunderstandings.")
+          }}
+        >
           <ImBubbles className="skills-button-icon" />
           <p className="skills-button-text">Comunication</p>
         </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Creativity")
+              setDesc("I am a very creative person. Often during the creation of a project I already have further ideas for improvements or creating something for the next time. Creativity and imagination are one of my best strengths. I think outside the box so I can find many interesting solutions.")
+          }}
+        >
           <HiLightBulb className="skills-button-icon" />
           <p className="skills-button-text">Creativity</p>
         </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Working under pressure")
+              setDesc("I am able to divide tasks in a proper way so that they are all carried out well. I am capable of planning my work in order to solve a problem before it occurs and to get rid of a stressful situation as quickly as possible.")
+          }}
+        >
           <GiOppression className="skills-button-icon" />
           <p className="skills-button-text">Working under pressure</p>
         </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Team working")
+              setDesc("Cooperation and support of others is very important in projects, that's why I am a person who can play in a team and help others or perform tasks together to achieve the best result of the team.")
+          }}
+        >
           <RiTeamFill className="skills-button-icon" />
           <p className="skills-button-text">Team working</p>
         </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Flexibility")
+              setDesc("I am willing to undertake various tasks and challenges. I like to learn new things and have knowledge of many fields or technologies, so if there is a need to do something different, new, it is not a problem for me. I am open to any proposal.")
+          }}
+        >
           <GiFlexibleStar className="skills-button-icon" />
           <p className="skills-button-text">Flexibility</p>
         </div>
-        <div className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}>
+        <div
+          className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Managment")
+              setDesc("I have experience in leading teams, usually where I am involved I have some sort of management role, so I can distribute tasks appropriately to group members and ensure that everything is done right.")
+          }}
+        >
           <ImUserTie className="skills-button-icon" />
           <p className="skills-button-text">Managment</p>
         </div>

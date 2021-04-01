@@ -1,5 +1,6 @@
 import React from 'react'
-import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import {AiFillLinkedin, AiFillGithub, AiFillMail} from 'react-icons/ai'
+import {IoSend} from 'react-icons/io'
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -35,10 +36,13 @@ const Contact = () => {
       <button className="contact-form-button" type="submit">Send</button>
     </form>
     <section className="contact-icons">
-      <a href="#" target="_blank">
+      <a href="mailto: arekcichocki95@gmail.com" target="_blank">
+        <AiFillMail className="contact-icons-item"/>
+      </a>
+      <a href="https://www.linkedin.com/in/arek-cichocki-7b400320b" target="_blank">
         <AiFillLinkedin className="contact-icons-item"/>
       </a>
-      <a href="#" target="_blank">
+      <a href="https://github.com/ArexSpeed" target="_blank">
         <AiFillGithub className="contact-icons-item" />
       </a>
     </section>
