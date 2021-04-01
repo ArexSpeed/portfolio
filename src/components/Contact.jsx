@@ -1,11 +1,17 @@
 import React from 'react'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log('email send');
+    emailjs.sendForm('service_b8k0doe', 'template_o67ocef', e.target, 'user_0WWdkrssyJ2UXzh7bvAcG')
+      .then((result) => {
+          window.location.reload()  
+      }, (error) => {
+          console.log(error.text);
+      });
   }
 
   return (

@@ -20,10 +20,11 @@
       background: transparent;
       border: none;
       border-bottom: 2px solid $primary;
-      color: $black;
+      color: $white;
       font-family: $font-family;
       transition: height 0.5s ease-in-out;
       &:focus{
+        color: $black;
         background: $primary;
         height: 30px;
         transition: 0.5s ease-in-out;
@@ -38,9 +39,11 @@
       background: transparent;
       border: none;
       border-bottom: 2px solid $primary;
+      color: $white;
       font-family: $font-family;
       transition: height 0.5s ease-in-out;
       &:focus{
+        color: $black;
         background: $primary;
         height: 100px;
         transition: 0.5s ease-in-out;
