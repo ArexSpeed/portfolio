@@ -69,8 +69,8 @@ export const projects = [
     images: [axo1, axo2, axo3, axo4,axo5],
     logo: axol,
     stacks: ['React', 'Sass', 'Firebase'],
-    website: '',
-    github: ''
+    website: 'https://ax-office.web.app/',
+    github: 'https://github.com/ArexSpeed/axoffice'
   },
   {
     title: 'Neograd',
@@ -78,8 +78,8 @@ export const projects = [
     images: [neograd1, neograd2, neograd3, neograd4,neograd5],
     logo: neogradl,
     stacks: ['React', 'Sass'],
-    website: '',
-    github: ''
+    website: 'https://arexspeed.github.io/neogradsite/',
+    github: 'https://github.com/ArexSpeed/neogradsite'
   },
   {
     title: 'ALeague',
@@ -87,8 +87,8 @@ export const projects = [
     images: [aleague1, aleague2, aleague3, aleague4,aleague5],
     logo: aleaguel,
     stacks: ['React', 'Sass','Node', 'Mongo', 'Firebase', 'Heroku'],
-    website: '',
-    github: ''
+    website: 'https://alleague.web.app/',
+    github: 'https://github.com/ArexSpeed/aleague'
   },
   {
     title: 'XTech',
@@ -96,8 +96,8 @@ export const projects = [
     images: [xtech1, xtech2, xtech3, xtech4,xtech5],
     logo: xtechl,
     stacks: ['React','StyledComponent' ,'Node', 'Heroku'],
-    website: '',
-    github: ''
+    website: 'https://xtechstore.herokuapp.com/',
+    github: 'https://github.com/ArexSpeed/xtechstore_server'
   },
   {
     title: 'Sport Story',
@@ -105,7 +105,7 @@ export const projects = [
     images: [sps1, sps2, sps3, sps4,sps5],
     logo: spsl,
     stacks: ['Wordpress', 'YouTube', 'Instagram'],
-    website: '',
+    website: 'http://sportstory.eu/',
     github: ''
   },
   {
@@ -114,8 +114,8 @@ export const projects = [
     images: [mw1, mw2, mw3, mw4,mw5],
     logo: mwl,
     stacks: ['React', 'Sass', 'Firebase', 'PHP'],
-    website: '',
-    github: ''
+    website: 'https://multiwordslang.web.app/',
+    github: 'https://github.com/ArexSpeed/multiwords'
   },
   {
     title: 'Galaxy Chat',
@@ -123,8 +123,8 @@ export const projects = [
     images: [gc1, gc2, gc3, gc4,gc5],
     logo: gcl,
     stacks: ['React', 'CSS', 'Firebase'],
-    website: '',
-    github: ''
+    website: 'https://galaxychats.web.app/',
+    github: 'https://github.com/ArexSpeed/galaxychat'
   },
   {
     title: 'ClickScore',
@@ -132,8 +132,8 @@ export const projects = [
     images: [cs1, cs2, cs3, cs4,cs5],
     logo: csl,
     stacks: ['HTML', 'CSS', 'JavaScript'],
-    website: '',
-    github: ''
+    website: 'http://click.sportstory.eu/',
+    github: 'https://github.com/ArexSpeed/clickscores/tree/main/clickscore'
   },
   {
     title: 'Clocks',
@@ -141,8 +141,8 @@ export const projects = [
     images: [clock1, clock2, clock3, clock4,clock5],
     logo: clockl,
     stacks: ['HTML', 'CSS', 'JavaScript'],
-    website: '',
-    github: ''
+    website: 'https://arexspeed.github.io/timer/',
+    github: 'https://github.com/ArexSpeed/timer'
   },
   {
     title: 'Rounder',
@@ -150,8 +150,8 @@ export const projects = [
     images: [rounder1, rounder2, rounder3, rounder4,rounder5],
     logo: rounderl,
     stacks: ['React', 'CSS', 'Firebase'],
-    website: '',
-    github: ''
+    website: 'https://sportrounder.web.app/',
+    github: 'https://github.com/ArexSpeed/clickscores/tree/main/rounder'
   },
   
 ]

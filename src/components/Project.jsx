@@ -7,7 +7,7 @@ import {BiShow} from 'react-icons/bi'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-const Project = ({title, desc, images, logo, stacks}) => {
+const Project = ({title, desc, images, logo, stacks, website, github}) => {
 
   return (
     <article className="projects-box">
@@ -200,11 +200,12 @@ const Project = ({title, desc, images, logo, stacks}) => {
                 }
               })}
 
-            <a href="#" target="_blank" referrerPolicy="no-referrer" className="projects-box-info-button">
+            
+            <a href={website} target="_blank" referrerPolicy="no-referrer" className="projects-box-info-button">
               <BiShow className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
               <p className="projects-box-info-button-name">Site</p>
             </a>
-            <a href="#" target="_blank" referrerPolicy="no-referrer" className="projects-box-info-button">
+            <a href={github} target="_blank" referrerPolicy="no-referrer" className="projects-box-info-button">
               <SiGithub className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
               <p className="projects-box-info-button-name">Github</p>
             </a>
