@@ -78,7 +78,7 @@ export const projects = [
     images: [neograd1, neograd2, neograd3, neograd4,neograd5],
     logo: neogradl,
     stacks: ['React', 'Sass'],
-    website: 'https://arexspeed.github.io/neogradsite/',
+    website: 'https://neogradcss.web.app/',
     github: 'https://github.com/ArexSpeed/neogradsite'
   },
   {
