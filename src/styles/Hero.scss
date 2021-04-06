@@ -92,6 +92,47 @@
         }
       }
     }
+    &-logo{
+      @include center-row;
+      max-height: 100px;
+      &-img{
+        margin-right: 20px;
+        max-height: 50px;
+      }
+      &-cv{
+        @include center-column;
+        width: 50px;
+        height: 50px;
+        margin: 20px auto;
+        border: none;
+        color: $bg;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        &::before{
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(to left, $primary, $secondary);
+          transform: rotate(45deg);
+          transition: 0.5s ease-in-out;
+        }
+        &:hover::before{
+          box-shadow: 0 0 5px $primary;
+          transition: 0.5s ease-in-out;
+        }
+        & span{
+          z-index: 10;
+        }
+      }
+    }
     &-img{
       flex: 1;
       width: 300px;

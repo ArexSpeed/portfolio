@@ -1,5 +1,7 @@
 import React from 'react'
 import Tilt from "react-tilt";
+import logo from '../images/logo.png'
+import cv from '../assets/CV-Cichocki.pdf'
 
 const Hero = () => {
   return (
@@ -15,7 +17,10 @@ const Hero = () => {
               <h2 className="hero-banner-name-one name">AREK</h2>
               <h3 className="hero-banner-name-two name">CICHOCKI</h3>
             </Tilt>
-            <div className="hero-banner-logo">A9</div>
+            <div className="hero-banner-logo">
+              <img src={logo} alt="AC95" className="hero-banner-logo-img" />
+              <a href={cv} download="CV-Cichocki" className="hero-banner-logo-cv"><span>CV</span></a>
+            </div>
             <Tilt className="hero-banner-name">
               <h2 className="hero-banner-name-one software">SOFTWARE</h2>
               <h3 className="hero-banner-name-two software">DEVELOPER</h3>
