@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a repo for my portfolio website
 
-## Available Scripts
+## About Me
 
-In the project directory, you can run:
+### Who am I?
+Hi! I am Arek, I live in Poznan, Poland and I create web apps. I am a fan of new technologies, science and sport. I like travel and explore new places. I am a person who likes new challenges and does not give up before reaching the goal. I am a very creative person with a big imagination, so you can not expect boredom and lack of tasks with me.
 
-### `npm start`
+### My story
+My programming journey began in school when I created the first websites for friends and local companies. I participated in a couple of computer science competitions also with success. In high school I focused more on graphics and I created a lot of logotypes, posters and short movies with special effects also. I mainly used Gimp, Photoshop or After Effects for this. After high school I went to Poznan University of Technology, Physic Department where in addition to various engineering subjects and physics, I learned the basics of SQL, Java and C++, but my favorite language was still JavaScript. As an engineering thesis I created a browser game about playing the role of a sports team manager and managing it. After graduation I went abroad to the Netherlands where I worked in the logistics industry and became a team leader and was responsible for managing the team. Then after 1.5 years I went back to college to specialize IT management and went back to learning my favorite JavaScript to then become a full time programmer. During my study, I created projects like AXOffice, Clickscore, Neograd and more. I still want to grow and want to be a better programmer every day.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### My hobbies
+Besides programming, my hobbies include keeping up with technological news and, above all, sports, both active and passive. I used to play team sports like volleyball and football now I run half marathons and the goal is still the marathon. I am also a fan of all kinds of sports statistics and reports, that’s why I have created a blog, channel and instagram SportStory.
+I am also interested in personal development and management, so I like to read books on this subject and my favorite authors are Dale Carnegie, Brian Tracy and Napoleon Hill.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### My plans
+I would like to become an expert in my field of programming, I’m going  to create new and better applications that will be used on a daily basis and I have a lot of ideas for these applications. It's important to step forward every day and increase my knowledge.
+        
+## Projects
 
-### `npm test`
+- AXOffice -> https://ax-office.web.app/
+- Neograd -> https://neogradcss.web.app/
+- ALeague -> https://alleague.web.app/
+- XTech -> https://xtechstore.herokuapp.com/
+- SportStory -> http://sportstory.eu/
+- MultiWords -> https://multiwordslang.web.app/
+- GalaxyChats -> https://galaxychats.web.app/
+- ClickScore -> http://click.sportstory.eu/
+- Rounder -> https://sportrounder.web.app/
+- Clocks -> https://arexspeed.github.io/timer/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Skills
 
-### `npm run build`
+### Frontend / Design
+- React
+- Next
+- Figma
+- Inkscape
+- Bootstrap
+- JavaScript
+- HTML
+- CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend / Deploy
+- Node.js
+- Firebase
+- Heroku
+- Postman
+- Database
+- Github
+- Wordpress
+- PHP
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
