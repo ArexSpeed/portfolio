@@ -23,7 +23,7 @@ const Hero = () => {
               <img src={logo} alt="AC95" className="hero-banner-logo-img" />
             </div>
             <Tilt className="hero-banner-name">
-              <h2 className="hero-banner-name-one software">SOFTWARE</h2>
+              <h2 className="hero-banner-name-one software">FRONTEND</h2>
               <h3 className="hero-banner-name-two software">DEVELOPER</h3>
             </Tilt>
           </article>
@@ -40,7 +40,7 @@ const Hero = () => {
           </article>
       </section>
       <section className="hero-desc">
-        Welcome ! I am glad that you are here on my porfolio website. Here you can know me a little get knowledge about my story and see all my projects. So let’s go, I hope you enjoy it ! 
+        Welcome ! I am glad that you are here on my porfolio website. Here you can find out about me, my story and see all my projects. So let’s go, I hope you enjoy it ! 
       </section>
     </div>
   )

@@ -35,14 +35,14 @@ const About = () => {
         I would like to become an expert in my field of programming, I’m going  to create new and better applications that will be used on a daily basis and I have a lot of ideas for these applications. It's important to step forward every day and increase my knowledge.
         </p>
       </section>
-      {/* <svg>
+      <svg>
       <filter id="wavy">
         <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
           <animate attributeName="baseFrequency" dur="60s" values="0.02;0.05;0.02" repeatCount="indefinite" />
         </feTurbulence>
         <feDisplacementMap in="SourceGraphic" scale="30" />
       </filter>
-    </svg> */}
+    </svg>
     </div>
   )
 }
