@@ -1,6 +1,8 @@
 import React from 'react'
 import Tilt from "react-tilt";
-import logo from '../images/logo.png'
+import {AiFillGithub} from 'react-icons/ai'
+import logo from '../images/herologo.png'
+import profile from '../images/heropic.png'
 import cv from '../assets/CV-Cichocki.pdf'
 
 const Hero = () => {
@@ -19,7 +21,6 @@ const Hero = () => {
             </Tilt>
             <div className="hero-banner-logo">
               <img src={logo} alt="AC95" className="hero-banner-logo-img" />
-              <a href={cv} download="CV-Cichocki" className="hero-banner-logo-cv"><span>CV</span></a>
             </div>
             <Tilt className="hero-banner-name">
               <h2 className="hero-banner-name-one software">SOFTWARE</h2>
@@ -27,7 +28,15 @@ const Hero = () => {
             </Tilt>
           </article>
           <article className="hero-banner-img">
-
+              <a href="https://github.com/ArexSpeed" target="_blank" className="hero-banner-img-box logo">
+                <span><AiFillGithub/></span>
+              </a>
+              <a href={cv} download="CV-Cichocki" className="hero-banner-img-box cv">
+              <span>CV</span>
+              </a>
+              <div className="hero-banner-img-box pic">
+                  <img src={profile} alt="" />
+              </div>
           </article>
       </section>
       <section className="hero-desc">

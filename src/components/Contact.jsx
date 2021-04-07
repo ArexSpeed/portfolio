@@ -39,7 +39,7 @@ const Contact = () => {
       <a href="mailto: arekcichocki95@gmail.com" target="_blank">
         <AiFillMail className="contact-icons-item"/>
       </a>
-      <a href="https://www.linkedin.com/in/arek-cichocki-7b400320b" target="_blank">
+      <a href="https://www.linkedin.com/in/arekcichocki" target="_blank">
         <AiFillLinkedin className="contact-icons-item"/>
       </a>
       <a href="https://github.com/ArexSpeed" target="_blank">
