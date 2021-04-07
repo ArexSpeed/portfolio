@@ -1,6 +1,6 @@
 @import 'Var';
 .hero{
-  width: 100%;
+  max-width: 100vw;
   min-height: 100vh;
   background: linear-gradient(45deg, $primary, $bg, $black, $secondary);
 	background-size: 400% 400%;
@@ -29,7 +29,7 @@
     margin: 20px auto;
     display: flex;
     flex-direction: row;
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 768px){
       flex-direction: column;
     }
     &-title{
@@ -105,6 +105,9 @@
       width: 300px;
       height: 300px;
       position: relative;
+      @media screen and (max-width: 768px){
+        margin-top: 50px;
+      }
       &-box{
         position: absolute;
         width: 100px;
@@ -112,12 +115,21 @@
         border: 5px groove $primary;
         background: transparent;
         transform: rotate(45deg);
+        @media screen and (max-width: 568px){
+          width: 50px;
+          height: 50px;
+          border: 2px groove $primary;
+        }
         &.logo{
           top: -50px;
           left: 50px;
           @include center-column;
           text-decoration: none;
           transition: background-color 0.5s ease-in-out;
+          @media screen and (max-width: 568px){
+            top: 0px;
+            left: 50px;
+          }
           &:hover{
             background-color: $primary;
             transition: background-color 0.5s ease-in-out;
@@ -129,6 +141,9 @@
             color: $primary;
             font-size: 50px;
             transform: rotate(-45deg);
+            @media screen and (max-width: 568px){
+              font-size: 25px;
+            }
           }
         }
         &.cv{
@@ -139,6 +154,10 @@
           border: none;
           text-decoration: none;
           transition: all 0.5s ease-in-out;
+          @media screen and (max-width: 568px){
+            top: 0px;
+            left: 150px;
+          }
           &:hover{
             background: transparent;
             border: 5px groove $primary;
@@ -157,11 +176,21 @@
           width: 250px;
           height: 250px;
           left: 150px;
+          @media screen and (max-width: 568px){
+            top: 50px;
+            left: 75px;
+            width: 100px;
+            height: 100px;
+          }
           & img{
             max-height: 125%;
             margin-left: 30px;
             margin-top: -20px;
             transform: rotate(-45deg);
+            @media screen and (max-width: 568px){
+              margin-left: 10px;
+              margin-top: -10px;
+            }
           }
         }
       }
