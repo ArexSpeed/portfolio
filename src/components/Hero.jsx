@@ -24,7 +24,7 @@ const Hero = () => {
               <a href={cv} download="CV-Cichocki" className="button-cv">
                 <span>CV</span>
               </a>
-              <a href="https://github.com/ArexSpeed" target="_blank" className="button-git">
+              <a href="https://github.com/ArexSpeed" target="_blank" rel="noreferrer"  className="button-git">
                   <span><AiFillGithub/></span>
               </a>
             </div>
