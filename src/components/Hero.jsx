@@ -1,5 +1,4 @@
 import React from 'react'
-import Tilt from "react-tilt";
 import {AiFillGithub} from 'react-icons/ai'
 import {Link} from 'react-scroll'
 import profile from '../images/heropic.png'
@@ -16,9 +15,6 @@ const Hero = () => {
       <section className="hero-banner">
         <article className="hero-banner-title">
           <h2 className="hero-banner-hello">Hello, <span>I am</span> Arek</h2>
-            {/* <div className="hero-banner-logo">
-              <img src={logo} alt="AC95" className="hero-banner-logo-img" />
-            </div> */}
             <div className="hero-banner-name">
               <h2 className="hero-banner-name-one">FRONTEND</h2>
               <h3 className="hero-banner-name-two">DEVELOPER</h3>
