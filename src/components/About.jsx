@@ -1,6 +1,16 @@
-import React from 'react'
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="about" id="about">
       <section className="section-title next">
@@ -9,7 +19,10 @@ const About = () => {
         </h1> 
       </section>
       <section className="about-section">
-        <article className="about-description">
+        <article 
+          className="about-description" 
+          data-aos="fade-right"
+        >
         <div className="about-circle">
         </div>
         <div className="about-info">
@@ -22,7 +35,7 @@ const About = () => {
         </div>
         </article>
 
-        <article className="about-description new">
+        <article className="about-description new" data-aos="fade-left">
         <div className="about-circle-right">
         </div>
         <div className="about-info right">
@@ -35,7 +48,7 @@ const About = () => {
         </div>
         </article>
 
-        <article className="about-description new">
+        <article className="about-description new" data-aos="fade-right">
         <div className="about-circle">
         </div>
         <div className="about-info">
@@ -49,7 +62,7 @@ const About = () => {
         </div>
         </article>
 
-        <article className="about-description new">
+        <article className="about-description new" data-aos="fade-left">
         <div className="about-circle-right">
         </div>
         <div className="about-info right">
