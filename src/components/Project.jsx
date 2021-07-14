@@ -201,11 +201,11 @@ const Project = ({title, desc, images, logo, stacks, website, github}) => {
               })}
 
             
-            <a href={website} target="_blank" referrerPolicy="no-referrer" className="projects-box-info-button">
+            <a href={website} target="_blank" rel="noreferrer" className="projects-box-info-button">
               <BiShow className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
               <p className="projects-box-info-button-name">Site</p>
             </a>
-            <a href={github} target="_blank" referrerPolicy="no-referrer" className="projects-box-info-button">
+            <a href={github} target="_blank" rel="noreferrer" className="projects-box-info-button">
               <SiGithub className="projects-box-info-button-icon" style={{fontSize: '25px'}} />
               <p className="projects-box-info-button-name">Github</p>
             </a>

@@ -1,0 +1,61 @@
+@import "Var";
+$axoffice: linear-gradient(45deg,#44d17a 0,  $bg 30%, $black 70%, #44d17a 100%);
+$multiwords: linear-gradient(45deg,#fe2be9 0,  $bg 30%, $black 70%, #fe2be9 100%);
+$rounder: linear-gradient(45deg,#373648 0, $bg 30%, $black 70%, #373648 100%);
+
+.n-projects{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: $bg;
+  &.axoffice {
+    background: $axoffice;
+  }
+  &.multiwords {
+    background: $multiwords;
+  }
+  &.rounder {
+    background: $rounder;
+  }
+  &-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &-nav{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    max-height: 100vh;
+    width: 200px;
+    overflow-y: scroll;
+    &-box {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      height: 70px;
+      margin: 10px;
+      padding: 5px;
+      background: rgba(184, 172, 172, 0.25);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      color: $white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  &-info {
+    max-width: 500px;
+  }
+  &-carousel {
+    @include center-column;
+    flex: 1;
+    padding: 20px;
+    height: 100%;
+    background: $white;
+
+  }
+
+}
