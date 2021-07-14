@@ -67,6 +67,7 @@ export const projects = [
     title: 'AXOffice',
     desc: 'Application contains several tools to make daily work and project management easier. Currently in Office available are lists where we can save our tasks and lists e.g shopping lists, projects to keep our private or teams projects, folders designed to save our favourite websites or bookmarks which will be available in all devices and budgets to simply manage our finances. To all projects in every app we can add our friends and share our files together.',
     images: [axo1, axo2, axo3, axo4,axo5],
+    imagesMobile: [axo4,axo5],
     logo: axol,
     stacks: ['React', 'Sass', 'Firebase'],
     website: 'https://ax-office.web.app/',
