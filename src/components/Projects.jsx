@@ -19,9 +19,9 @@ const Projects = () => {
           {selectedProject.name.toUpperCase()}
         </h1> 
       </section>
-      <div className="projects-flex">
-      <section className="projects-nav">
-        <ul>
+      <section className="projects-section">
+      <article className="projects-nav">
+        <ul className="projects-nav-list">
         {projects.map(project => (
           <li 
             className="projects-nav-box"
@@ -36,8 +36,8 @@ const Projects = () => {
           </li>
         ))}
         </ul>
-      </section>
-      <section className="projects-info">
+      </article>
+      <article className="projects-info">
             <div className="projects-carousel">
                     <button 
                       className="projects-carousel-button" 
@@ -232,8 +232,8 @@ const Projects = () => {
 
               </div>
           </div>
+      </article>
       </section>
-      </div>
     </div>
   )
 }

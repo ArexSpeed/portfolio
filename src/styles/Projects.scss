@@ -18,10 +18,14 @@ $backgrounds: (
   width: 100%;
   min-height: 100vh;
   background: $bg;
-  &-flex {
+  overflow-x: hidden;
+  &-section {
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   &-nav{
     flex: 1;
@@ -35,6 +39,18 @@ $backgrounds: (
     scrollbar-width: none; 
     &::-webkit-scrollbar {
       display: none;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      flex-direction: row;
+      overflow-x: scroll;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 768px) {
+        flex-direction: row;
+      }
     }
     &-box {
       display: flex;
@@ -53,9 +69,23 @@ $backgrounds: (
       border-radius: 10px;
       cursor: pointer;
       overflow: hidden;
+      @media screen and (max-width: 768px) {
+        width: 150px;
+        height: 50px;
+      }
     //hover to line box
+    & h3 {
+      font-size: 20px;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
     & h5 {
       color: gray;
+      font-size: 14px;
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
     }
     &:hover{
       box-shadow: 0 0 10px aqua;
@@ -129,6 +159,10 @@ $backgrounds: (
       padding: 20px;
       text-align: justify;
       margin-left: 50px;
+      @media screen and (max-width: 768px) {
+        width: 95%;
+        margin: auto;
+      }
       & h4 {
         text-transform: uppercase;
         font-size: 14px;
@@ -211,9 +245,16 @@ $backgrounds: (
       margin: 20px 0;
       transition: 1s ease-in-out;
       position: relative;
+      @media screen and (max-width: 768px) {
+        border-radius: 5px;
+        box-shadow: 0 4px 16px 0 rgba(109, 113, 170, 0.9);
+      }
       &-desktop {
         max-width: 500px;
         border-radius: 10px;
+        @media screen and (max-width: 768px) {
+          max-width: 90%;
+        } 
       }
       &-mobile {
         position: absolute;
@@ -222,6 +263,14 @@ $backgrounds: (
         transform: skewX(-10deg) rotate(10deg);
         border-radius: 10px;
         box-shadow: 0 8px 32px 0 rgba(109, 113, 170, 0.9);
+        @media screen and (max-width: 768px) {
+          max-height: 150px;
+          border-radius: 5px;
+          box-shadow: 0 4px 16px 0 rgba(109, 113, 170, 0.9);
+        }
+        @media screen and (max-width: 576px){
+          max-height: 100px;
+        }
       }
     }
     &-button {
@@ -231,6 +280,7 @@ $backgrounds: (
       border: none;
       color: $primary;
       cursor: pointer;
+      outline: none;
       &:disabled {
         color: gray !important;
       }
