@@ -51,15 +51,11 @@ const data = [
 ]
 
 const NewProjects = () => {
-  const [selectedProject, setSelectedProject] = useState({id: 0, name: 'MY PROJECTS'});
+  const [selectedProject, setSelectedProject] = useState({id: 0, name: 'MY PROJECTS', class: ''});
   const [currentImage, setCurrentImage] = useState(0);
 
-  const prevImage = () => {
-    setCurrentImage(currentImage+1);
-  }
-
   return (
-    <div className={`n-projects ${selectedProject.name}`}>
+    <div className={`n-projects ${selectedProject.class}`}>
       <section className="section-title next">
         <h1 className="section-title-text">
           {selectedProject.name.toUpperCase()}
@@ -68,17 +64,17 @@ const NewProjects = () => {
       <div className="n-projects-flex">
       <section className="n-projects-nav">
         <ul>
-        {projects.map(item => (
+        {projects.map(project => (
           <li 
             className="n-projects-nav-box"
-            onClick={() => setSelectedProject({ id: item.id, name: item.title})}
+            onClick={() => setSelectedProject({ id: project.id, name: project.title, class: project.class})}
           >
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <h3>{item.title}</h3>
-            <h5>{item.shortDesc}</h5>
+            <h3>{project.title}</h3>
+            <h5>{project.shortDesc}</h5>
           </li>
         ))}
         </ul>

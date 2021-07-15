@@ -64,8 +64,23 @@ import spsl from '../images/spsl.png'
 
 export const projects = [
   {
+    id: 0,
+    title: 'My Portfolio',
+    class: 'portfolio',
+    shortDesc: 'Portfolio site',
+    desc: 'Application contains several tools to make daily work and project management easier. Currently in Office available are lists where we can save our tasks and lists e.g shopping lists, projects to keep our private or teams projects, folders designed to save our favourite websites or bookmarks which will be available in all devices and budgets to simply manage our finances. To all projects in every app we can add our friends and share our files together.',
+    images: [axo1, axo2, axo3, axo4,axo5],
+    imagesMobile: [axo4,axo5],
+    logo: axol,
+    stacks: ['React', 'Sass', 'Firebase'],
+    website: 'https://arekcichocki.dev/',
+    github: 'https://github.com/ArexSpeed/axoffice'
+  },
+  {
     id: 1,
     title: 'AXOffice',
+    class: 'axoffice',
+    shortDesc: 'Managment App',
     desc: 'Application contains several tools to make daily work and project management easier. Currently in Office available are lists where we can save our tasks and lists e.g shopping lists, projects to keep our private or teams projects, folders designed to save our favourite websites or bookmarks which will be available in all devices and budgets to simply manage our finances. To all projects in every app we can add our friends and share our files together.',
     images: [axo1, axo2, axo3, axo4,axo5],
     imagesMobile: [axo4,axo5],
@@ -77,6 +92,8 @@ export const projects = [
   {
     id: 2,
     title: 'Neograd',
+    class: 'neograd',
+    shortDesc: 'CSS Generator',
     desc: 'NeoGrad is a SCSS library and CSS code generator for creating buttons and divs with effects on your website. You can start using NeoGrad by downloading the code from github and add this to your projects or you can use our Builder You can choose your effect by clicking on the following steps and copy code and add to your css file without downloading anything. On the website are also sample docs and a few sample sites showing how we can use NeoGrad.',
     images: [neograd1, neograd2, neograd3],
     imagesMobile: [neograd4,neograd5],
@@ -88,6 +105,8 @@ export const projects = [
   {
     id: 3,
     title: 'ALeague',
+    class: 'aleague',
+    shortDesc: 'Sport league website',
     desc: 'Website for league competition with separate subpages for each team with its details, statistics. In the history section we can also check the tables from all seasons and check all H2H between two teams. There is also a voting system after which the results are shown with an interesting effect. This website is created mainly for learning how to create own API and manage and operate it.',
     images: [aleague1, aleague2, aleague3, aleague4,aleague5],
     imagesMobile: [aleague4,aleague5],
@@ -99,6 +118,8 @@ export const projects = [
   {
     id: 4,
     title: 'XTech',
+    class: 'xtech',
+    shortDesc: 'E-commerce products website',
     desc: 'Sample tech industry website. It contains data about products, there is shop where we can add products of interest to the basket. The website also has a simple admin panel where we can add new products that are saved to the MongoDB database.',
     images: [xtech1, xtech2, xtech3],
     imagesMobile: [xtech4,xtech5],
@@ -110,6 +131,8 @@ export const projects = [
   {
     id: 5,
     title: 'Sport Story',
+    class: 'sportstory',
+    shortDesc: 'Sport statistics',
     desc: 'Interesting facts and sport stats that are regularly added on Instagram and previously also on blog where tables from sports games are also available. SportStory is also on Youtube with a few short movies. In the future I want to add more interesting tables and stats and create quiz app for sport.',
     images: [sps1, sps2, sps3],
     imagesMobile: [sps4,sps5],
@@ -121,6 +144,8 @@ export const projects = [
   {
     id: 6,
     title: 'MultiWords',
+    class: 'multiwords',
+    shortDesc: 'Language learning app',
     desc: 'App to learn several languages at the simultaneously. We can learn words by select a category a check all words in it or testing what we learn by writing the words or connect. You can also play a memo game where you have to find the same word in 2 languages to match.',
     images: [mw1, mw2, mw3],
     imagesMobile: [mw4,mw5],
@@ -132,6 +157,8 @@ export const projects = [
   {
     id: 7,
     title: 'Galaxy Chat',
+    class: 'galaxychat',
+    shortDesc: 'Chat application',
     desc: 'Online chat where we can create our own rooms and invite other users to conversation or we can also create an open room available to all users. We can also easily edit and customize our rooms. Chat is working thanks to Firebase.',
     images: [gc1, gc2, gc3],
     imagesMobile: [gc4,gc5],
@@ -143,9 +170,11 @@ export const projects = [
   {
     id: 8,
     title: 'ClickScore',
+    class: 'clickscore',
+    shortDesc: 'Sports score simulator',
     desc: 'Clickscore is a sport competition simulator for different types of disciplines such as football, basketball, handball, volleyball, speedway and formula 1. We can select existing teams or create our own. To play we can select various type of tournaments either league and groups and in speedway individual competition are also available. Every team has a 3 skills which we can change and according to these skills the program calculates results and generate scoreboard.',
     images: [cs1, cs2, cs3],
-    imagesMlobile: [cs4,cs5],
+    imagesMobile: [cs4,cs5],
     logo: csl,
     stacks: ['HTML', 'CSS', 'JavaScript'],
     website: 'http://click.sportstory.eu/',
@@ -154,6 +183,8 @@ export const projects = [
   {
     id: 9,
     title: 'Clocks',
+    class: 'clocks',
+    shortDesc: 'Clock application',
     desc: 'Clock, stopwatch, timer and calendar online. Interesting features include time checking in different times zone in 3 types of clock, digital, analog and binary. App includes timer for workout where you can set how many sets, workouts and time for workout you do and the stopwatch will measure the appropriate amount of time on its own.',
     images: [clock1, clock2, clock3],
     imagesMobile: [clock4,clock5],
@@ -165,6 +196,8 @@ export const projects = [
   {
     id: 10,
     title: 'Rounder',
+    class: 'rounder',
+    shortDesc: 'Competition generator',
     desc: 'It is a generator to create your own calendar of sports events, it allows you to create a calendar for league or group games, and also we can make a group draw using the application, after typing the teams the application itself generates a calendar of games and the division of groups.',
     images: [rounder1, rounder2, rounder3],
     imagesMobile: [rounder4,rounder5],
