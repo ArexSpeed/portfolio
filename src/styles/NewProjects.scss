@@ -45,22 +45,76 @@ $rounder: linear-gradient(45deg,#373648 0, $bg 30%, $black 70%, #373648 100%);
       color: $white;
       border-radius: 10px;
       cursor: pointer;
+      overflow: hidden;
+    //hover to line box
+    &:hover{
+      box-shadow: 0 0 10px aqua;
+      transition-delay: 1s;
+      & span:nth-child(1){
+        left: 100%;
+        transition: 1s;
+      }
+      & span:nth-child(3) {
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+      }
+      & span:nth-child(2) {
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+      }
+      & span:nth-child(4) {
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+      }
+    }
+    & span{
+      position: absolute;
+      display: block;
+      &:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, aqua);
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, aqua);
+      }
+      &:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, aqua);
+      }
+      &:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, aqua);
+      }
+    }
     }
   }
   &-info {
     flex: 3;
     //background: blue;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     &-box {
-      width: 500px;
-      background:rgba(0,0,0,.5);
+      width: 600px;
+      background: transparent;
       border-radius: 10px;
-      box-shadow: 0 8px 32px 0 rgba(109, 113, 170, 0.37);
-      backdrop-filter: blur( 4px );
-      -webkit-backdrop-filter: blur( 4px ); 
       color: $white;
       padding: 20px;
       text-align: justify;
@@ -72,6 +126,21 @@ $rounder: linear-gradient(45deg,#373648 0, $bg 30%, $black 70%, #373648 100%);
         margin: 10px auto;
         text-decoration: underline;
       }
+      & p {
+        font-size: 18px;
+      }
+    }
+    &-stack {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
+      padding: 10px;
+      width: 100%;
+      height: 70px;
+      box-shadow: 0 8px 32px 0 rgba(109, 113, 170, 0.37);
+      border-radius: 10px;
     }
   }
   &-carousel {
