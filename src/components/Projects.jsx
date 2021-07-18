@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import {projects} from './projectsData';
 
-import {SiHtml5,SiSass,SiReact,SiCss3,SiStyledComponents, SiJavascript, SiFigma, SiInkscape, SiBootstrap, SiNextDotJs,
-  SiNodeDotJs, SiFirebase, SiGithub, SiWordpress, SiPhp, SiMongodb, SiHeroku, SiYoutube, SiInstagram} 
+import {SiHtml5, SiSass, SiReact, SiCss3, SiStyledComponents, SiJavascript, SiFigma, SiInkscape, SiBootstrap, SiNextDotJs,
+  SiNodeDotJs, SiFirebase, SiGithub, SiWordpress, SiPhp, SiMongodb, SiHeroku, SiYoutube, SiInstagram, SiStripe, SiTailwindcss} 
 from 'react-icons/si';
 import {GiDatabase, GiOppression, GiFlexibleStar} from 'react-icons/gi'
 import {BiShow} from 'react-icons/bi'
@@ -24,7 +24,7 @@ const Projects = () => {
         <ul className="projects-nav-list">
         {projects.map(project => (
           <li 
-            className="projects-nav-box"
+            className={`projects-nav-box ${selectedProject.name === project.title ? 'active' : ''}`}
             onClick={() => setSelectedProject({ id: project.id, name: project.title, class: project.class})}
           >
             <span></span>
@@ -78,6 +78,16 @@ const Projects = () => {
                           <p className="projects-info-stack-button-name">React</p>
                         </div>
                       );
+                    case "Next":
+                      return (
+                        <div className="projects-info-stack-button">
+                          <SiNextDotJs
+                            className="projects-info-stack-button-icon"
+                            style={{ fontSize: "25px" }}
+                          />
+                          <p className="projects-info-stack-button-name">Next</p>
+                        </div>
+                      );
                     case "Sass":
                       return (
                         <div className="projects-info-stack-button">
@@ -86,6 +96,16 @@ const Projects = () => {
                             style={{ fontSize: "25px" }}
                           />
                           <p className="projects-info-stack-button-name">Sass</p>
+                        </div>
+                      );
+                    case "Tailwind":
+                      return (
+                        <div className="projects-info-stack-button">
+                          <SiTailwindcss
+                            className="projects-info-stack-button-icon"
+                            style={{ fontSize: "25px" }}
+                          />
+                          <p className="projects-info-stack-button-name">Tailwind</p>
                         </div>
                       );
                     case "Node":
@@ -186,6 +206,16 @@ const Projects = () => {
                             style={{ fontSize: "25px" }}
                           />
                           <p className="projects-info-stack-button-name">Wordpress</p>
+                        </div>
+                      );
+                      case "Stripe":
+                      return (
+                        <div className="projects-info-stack-button">
+                          <SiStripe
+                            className="projects-info-stack-button-icon"
+                            style={{ fontSize: "25px" }}
+                          />
+                          <p className="projects-info-stack-button-name">Stripe</p>
                         </div>
                       );
                       case "YouTube":

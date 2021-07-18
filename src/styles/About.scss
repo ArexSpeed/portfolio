@@ -4,7 +4,7 @@
   width: 100%;
   min-height: 100vh;
   //background: $primary;
-  background: radial-gradient(ellipse at center, $primary 0%, $bg 100%);
+  background: radial-gradient(ellipse at center, $primary 0%, #140595 100%);
   border-top: 5px groove $primary;
   padding-bottom: 200px;
   overflow-x: hidden;
@@ -33,7 +33,7 @@
     clip-path: ellipse(46% 44% at 8% 48%);
     width: 50%;
     height: 500px;
-    background: $bg;
+    background: rgba(104, 249, 231, 0.5);
     @media screen and (max-width: 768px){
       display: none;
     }
@@ -46,7 +46,7 @@
     transform: rotate(180deg);
     width: 50%;
     height: 500px;
-    background:$bg;
+    background: rgba(104, 249, 231, 0.5);
     @media screen and (max-width: 768px){
       display: none;
     }

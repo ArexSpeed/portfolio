@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {SiHtml5,SiSass,SiReact, SiJavascript, SiFigma, SiInkscape, SiBootstrap, SiNextDotJs,
+import {SiHtml5, SiSass, SiReact, SiJavascript, SiTypescript, SiFigma, SiInkscape, SiBootstrap, SiNextDotJs,
         SiNodeDotJs, SiFirebase, SiGithub, SiWordpress, SiPhp, SiPostman, SiHeroku} 
 from 'react-icons/si'
 import {GiDatabase, GiOppression, GiFlexibleStar} from 'react-icons/gi'
@@ -65,12 +65,12 @@ const Skills = () => {
         <div
           className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
           onClick={() => {
-              setTitle("Next")
-              setDesc("Very enjoyable framework which currently I use to create a new blog. I know the use of SSR and I can create a basic API to app so that I can write a fully functional “fullstack” app in one framework.")
+              setTitle("TypeScript")
+              setDesc("Superset for JavaScript but thanks TS I can avoid a lot of basic errors in my projects. I can use TypeScript with all projects which earlier was written in javascript. I can change projects in React and Node to full support ts apps. ")
           }}
         >
-          <SiNextDotJs className="skills-button-icon"/>
-          <p className="skills-button-text">Next.js</p>
+          <SiTypescript className="skills-button-icon" />
+          <p className="skills-button-text">TypeScript</p>
         </div>
         <div
           className={skill === 'Frontend' ? 'skills-button active' : 'skills-button'}
@@ -168,32 +168,22 @@ const Skills = () => {
         <div
           className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
           onClick={() => {
-              setTitle("Wordpress")
-              setDesc("I can create websites in Wordpress and install it on every server. Creation of page layouts using appropriate plug-ins and configuration of plug-ins according to the client's needs, such as better performance, SEO or custom tables.")
+              setTitle("CMS")
+              setDesc("I can create websites in Wordpress and install it on every server. Creation of page layouts using appropriate plug-ins and configuration of plug-ins according to the client's needs, such as better performance, SEO or custom tables. For more specific apps I use Strapi which is a great option.")
           }}
         >
           <SiWordpress className="skills-button-icon" />
-          <p className="skills-button-text">Wordpress</p>
+          <p className="skills-button-text">CMS</p>
         </div>
         <div
           className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
           onClick={() => {
-              setTitle("Heroku")
-              setDesc("I use heroku to host applications developed in Node JS. I have learned the basic heroku CLI and I can deploy an API to heroku for use by other apps and also set environment variables  if it is necessary. However, heroku is not the only service on which I can host applications, I also use Netlify, Firebase or GithubPages. I have no problems using traditional servers, which I manage via FTP.")
-          }}
-        >
-          <SiHeroku className="skills-button-icon" />
-          <p className="skills-button-text">Heroku</p>
-        </div>
-        <div
-          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
-          onClick={() => {
-              setTitle("Firebase")
-              setDesc("I use Firebase to host apps and also as a database by firestore, which is very useful for me thanks to real time function. Authentication with Firebase is also very comfortable to use for me. I can also set basic firebase rules for a firestore.")
+              setTitle("Hosting")
+              setDesc("For hosting my app I use tools like Firebase, Heroku, Vercel or Netlify. I use Firebase to host apps and also as a database by firestore, which is very useful for me thanks to real time function. Authentication with Firebase is also very comfortable to use for me. I can also set basic firebase rules for a firestore. I use heroku to host applications developed in Node JS.")
           }}
         >
           <SiFirebase className="skills-button-icon" />
-          <p className="skills-button-text">Firebase</p>
+          <p className="skills-button-text">Hosting</p>
         </div>
         <div
           className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
@@ -214,6 +204,16 @@ const Skills = () => {
         >
           <SiPostman className="skills-button-icon" />
           <p className="skills-button-text">Postman</p>
+        </div>
+        <div
+          className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}
+          onClick={() => {
+              setTitle("Next")
+              setDesc("Amazing framwork for both frontend and backend tasks. Currently I use NextJS for create fullstack application. I can integrate Next app with payments gate like Strapi or Paypal, make full authenticated app with Next-Auth. NextJs gives me a great opportunity with easy integration with database using ORM like Prisma and easy hosting with vercel.")
+          }}
+        >
+          <SiNextDotJs className="skills-button-icon"/>
+          <p className="skills-button-text">Next.js</p>
         </div>
         <div
           className={skill === 'Backend' ? 'skills-button active' : 'skills-button'}

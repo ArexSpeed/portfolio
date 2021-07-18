@@ -5,6 +5,12 @@ import aleague4 from '../images/aleague4.png'
 import aleague5 from '../images/aleague5.png'
 import aleague6 from '../images/aleague6.png'
 import aleaguel from '../images/aleaguel.png'
+import cake1 from '../images/cake1.png'
+import cake2 from '../images/cake2.png'
+import cake3 from '../images/cake3.png'
+import cake4 from '../images/cake4.png'
+import cake5 from '../images/cake5.png'
+import cake6 from '../images/cake6.png'
 import xtech1 from '../images/xtech1.png'
 import xtech2 from '../images/xtech2.png'
 import xtech3 from '../images/xtech3.png'
@@ -83,7 +89,7 @@ export const projects = [
     title: 'My Portfolio',
     class: 'portfolio',
     shortDesc: 'Portfolio site',
-    desc: 'Application contains several tools to make daily work and project management easier. Currently in Office available are lists where we can save our tasks and lists e.g shopping lists, projects to keep our private or teams projects, folders designed to save our favourite websites or bookmarks which will be available in all devices and budgets to simply manage our finances. To all projects in every app we can add our friends and share our files together.',
+    desc: 'Portfolio site made in React with all projects I made.',
     images: [port1, port2, port3],
     imagesMobile: [port5, port6, port4],
     logo: portl,
@@ -106,6 +112,19 @@ export const projects = [
   },
   {
     id: 2,
+    title: 'CakeMe',
+    class: 'cakeme',
+    shortDesc: 'Ecommerce products',
+    desc: 'CakeMe is an example of e-commerce app where you can create your own bakery and sell or buy products. This app is made with NextJs, Stripe, Tailwind and Airtable. It is a full project both backend and frontend includes payments and authentication',
+    images: [cake1, cake2, cake3],
+    imagesMobile: [cake4,cake5, cake6],
+    logo: neogradl,
+    stacks: ['Next', 'Tailwind', 'Stripe'],
+    website: 'https://cakeme.vercel.app/',
+    github: 'https://github.com/ArexSpeed/cakeme'
+  },
+  {
+    id: 3,
     title: 'Neograd',
     class: 'neograd',
     shortDesc: 'CSS Generator',
@@ -118,7 +137,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/neogradsite'
   },
   {
-    id: 3,
+    id: 4,
     title: 'ALeague',
     class: 'aleague',
     shortDesc: 'Sport league website',
@@ -131,7 +150,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/aleague'
   },
   {
-    id: 4,
+    id: 5,
     title: 'XTech',
     class: 'xtech',
     shortDesc: 'E-commerce products website',
@@ -144,7 +163,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/xtechstore_server'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Sport Story',
     class: 'sportstory',
     shortDesc: 'Sport statistics',
@@ -157,7 +176,7 @@ export const projects = [
     github: ''
   },
   {
-    id: 6,
+    id: 7,
     title: 'MultiWords',
     class: 'multiwords',
     shortDesc: 'Language learning app',
@@ -170,7 +189,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/multiwords'
   },
   {
-    id: 7,
+    id: 8,
     title: 'Galaxy Chat',
     class: 'galaxychat',
     shortDesc: 'Chat application',
@@ -183,7 +202,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/galaxychat'
   },
   {
-    id: 8,
+    id: 9,
     title: 'ClickScore',
     class: 'clickscore',
     shortDesc: 'Sports score simulator',
@@ -196,7 +215,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/clickscores/tree/main/clickscore'
   },
   {
-    id: 9,
+    id: 10,
     title: 'Clocks',
     class: 'clocks',
     shortDesc: 'Clock application',
@@ -209,7 +228,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/timer'
   },
   {
-    id: 10,
+    id: 11,
     title: 'Rounder',
     class: 'rounder',
     shortDesc: 'Competition generator',

@@ -2,6 +2,7 @@
 
 $backgrounds: (
   axoffice: linear-gradient(45deg,#44d17a 0,  $bg 30%, $black 70%, #44d17a 100%),
+  cakeme: linear-gradient(45deg,#DC934F 0,  $bg 30%, $black 70%, #DC934F 100%),
   neograd: linear-gradient(45deg,#6F0DD0 0,  $bg 30%, $black 70%, #6F0DD0 100%),
   aleague: linear-gradient(45deg,#A2FA92 0,  $bg 30%, $black 70%, #2B9CDB 100%),
   xtech: linear-gradient(45deg,#2CEAB9 0,  $bg 30%, $black 70%, #602CEA 100%),
@@ -87,27 +88,30 @@ $backgrounds: (
         font-size: 12px;
       }
     }
+    &.active {
+      box-shadow: 0 0 10px aqua;
+    }
     &:hover{
       box-shadow: 0 0 10px aqua;
-      transition-delay: 1s;
+      transition-delay: 400ms;
       & span:nth-child(1){
         left: 100%;
-        transition: 1s;
+        transition: 0.4s;
       }
       & span:nth-child(3) {
         right: 100%;
-        transition: 1s;
-        transition-delay: 0.5s;
+        transition: 0.4s;
+        transition-delay: 0.2s;
       }
       & span:nth-child(2) {
         top: 100%;
-        transition: 1s;
-        transition-delay: 0.25s;
+        transition: 0.4s;
+        transition-delay: 0.1s;
       }
       & span:nth-child(4) {
         bottom: 100%;
-        transition: 1s;
-        transition-delay: 0.75s;
+        transition: 0.4s;
+        transition-delay: 0.3s;
       }
     }
     & span{
