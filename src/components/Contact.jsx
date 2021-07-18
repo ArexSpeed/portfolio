@@ -23,9 +23,6 @@ const Contact = () => {
           CONTACT
         </h1> 
       </section>
-      {/* <section className="contact-desc">
-        If you have any question or proposition, send me a message by this form or use Linkedin
-      </section> */}
       <section className="contact-section">
         <div className="contact-section-left">
           <p style={{color: 'white'}}>If you have question or proposition, <br /> send me a message by this form or use Linkedin</p>
