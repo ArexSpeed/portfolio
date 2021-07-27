@@ -250,12 +250,12 @@ const Skills = () => {
         <div
           className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
           onClick={() => {
-              setTitle("Comunication")
+              setTitle("Communication")
               setDesc("I am an open and communicative person, sometimes too much so, but I try to express my messages clearly and lucidly. I am also a good listener, concentrating on what my conversation partner says so as to avoid any misunderstandings.")
           }}
         >
           <ImBubbles className="skills-button-icon" />
-          <p className="skills-button-text">Comunication</p>
+          <p className="skills-button-text">Communication</p>
         </div>
         <div
           className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
@@ -300,12 +300,12 @@ const Skills = () => {
         <div
           className={skill === 'Soft' ? 'skills-button active' : 'skills-button'}
           onClick={() => {
-              setTitle("Managment")
+              setTitle("Management")
               setDesc("I have experience in leading teams, usually where I am involved I have some sort of management role, so I can distribute tasks appropriately to group members and ensure that everything is done right.")
           }}
         >
           <ImUserTie className="skills-button-icon" />
-          <p className="skills-button-text">Managment</p>
+          <p className="skills-button-text">Management</p>
         </div>
 
         <article className="skills-circle-text">

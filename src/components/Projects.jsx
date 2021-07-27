@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {projects} from './projectsData';
+import {projects} from '../projectsData';
 
 import {SiHtml5, SiSass, SiReact, SiCss3, SiStyledComponents, SiJavascript, SiFigma, SiInkscape, SiBootstrap, SiNextDotJs,
   SiNodeDotJs, SiFirebase, SiGithub, SiWordpress, SiPhp, SiMongodb, SiHeroku, SiYoutube, SiInstagram, SiStripe, SiTailwindcss} 
