@@ -1,6 +1,6 @@
 # Portfolio
 
-This is a repo for my portfolio website
+This is a repo for my portfolio website -> https://arekcichocki.dev/
 
 ## About Me
 
@@ -20,6 +20,7 @@ I would like to become an expert in my field of programming, I’m going  to cre
 ## Projects
 
 - AXOffice -> https://ax-office.web.app/
+- CameMe -> https://cakeme.vercel.app/
 - Neograd -> https://neogradcss.web.app/
 - ALeague -> https://alleague.web.app/
 - XTech -> https://xtechstore.herokuapp.com/
@@ -39,11 +40,14 @@ I would like to become an expert in my field of programming, I’m going  to cre
 - Inkscape
 - Bootstrap
 - JavaScript
+- TypeScript
 - HTML
 - CSS
+- Tailwind
 
 ### Backend / Deploy
 - Node.js
+- Next.js
 - Firebase
 - Heroku
 - Postman
@@ -51,4 +55,13 @@ I would like to become an expert in my field of programming, I’m going  to cre
 - Github
 - Wordpress
 - PHP
+
+### Soft Skills
+- Management
+- Quick to learn
+- Team working
+- Creativity
+- Communication
+- Negotiate
+
 
