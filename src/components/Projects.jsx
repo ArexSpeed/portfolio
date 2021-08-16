@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {projects} from '../projectsData';
 
 import {SiHtml5, SiSass, SiReact, SiCss3, SiStyledComponents, SiJavascript, SiFigma, SiInkscape, SiBootstrap, SiNextDotJs,
-  SiNodeDotJs, SiFirebase, SiGithub, SiWordpress, SiPhp, SiMongodb, SiHeroku, SiYoutube, SiInstagram, SiStripe, SiTailwindcss} 
+  SiNodeDotJs, SiFirebase, SiGithub, SiWordpress, SiPhp, SiMongodb, SiHeroku, SiYoutube, SiInstagram, SiStripe, SiTailwindcss, SiTypescript} 
 from 'react-icons/si';
 import {GiDatabase, GiOppression, GiFlexibleStar} from 'react-icons/gi'
 import {BiShow} from 'react-icons/bi'
@@ -132,6 +132,16 @@ const Projects = () => {
                       return (
                         <div className="projects-info-stack-button">
                           <SiJavascript
+                            className="projects-info-stack-button-icon"
+                            style={{ fontSize: "25px" }}
+                          />
+                          <p className="projects-info-stack-button-name">TS</p>
+                        </div>
+                      );
+                      case "TypeScript":
+                      return (
+                        <div className="projects-info-stack-button">
+                          <SiTypescript
                             className="projects-info-stack-button-icon"
                             style={{ fontSize: "25px" }}
                           />
