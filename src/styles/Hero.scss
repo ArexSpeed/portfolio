@@ -22,15 +22,82 @@
         justify-content: space-between;
       }
     }
-    &-hello{
-      color: $white;
-      font-size: 50px;
-      @media screen and (max-width: 768px){
-        font-size: 25px;
-        margin: 20px 0;
+    &-type {
+      display: flex;
+      flex-direction: row;
+      & .hello {
+        color: #fff;
+        overflow: hidden;
+        width: auto;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        animation: typing 1s steps(50, end);
+        font-size: 50px;
+        @media screen and (max-width: 768px){
+          font-size: 25px;
+          margin: 20px 0;
+        }
       }
-      & span {
-        color: $primary;
+      & .col {
+        display: flex;
+        flex-direction: column;
+        &-text {
+          visibility: hidden;
+          margin-top: 0px;
+          animation: show 1s ease forwards 1.6s;
+          color: #fff;
+          font-size: 50px;
+          @media screen and (max-width: 768px){
+            font-size: 25px;
+            margin: 20px 0;
+          }
+          & span {
+            color: $primary;
+          }
+        }
+        &-box {
+          background: #555;
+          color: white;
+          width: auto;
+          padding: 5px;
+          border-radius: 5px;
+          text-align: center;
+          visibility: hidden;
+          margin-top: 0;
+          animation: prompt 1s ease 1s, promptBack 0.1s ease forwards 1.5s;
+        }
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes prompt {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes promptBack {
+        from {
+          background: #555;
+        }
+        to {
+          background: $secondary;
+        }
+      }
+      @keyframes show {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
       }
     }
     &-name{
@@ -123,42 +190,42 @@
     & path:nth-child(1) {
       stroke-dasharray: 412;
       stroke-dashoffset: 412;
-      animation: line-anim 1.5s ease forwards;
+      animation: line-anim 1.5s ease forwards 2s;
     }
     & path:nth-child(2) {
       stroke-dasharray: 515;
       stroke-dashoffset: 515;
-      animation: line-anim 1.5s ease forwards 0.5s;
+      animation: line-anim 1.5s ease forwards 2.5s;
     }
     & path:nth-child(3) {
       stroke-dasharray: 513;
       stroke-dashoffset: 513;
-      animation: line-anim 1.5s ease forwards 1s;
+      animation: line-anim 1.5s ease forwards 3s;
     }
     & path:nth-child(4) {
       stroke-dasharray: 559;
       stroke-dashoffset: 559;
-      animation: line-anim 1.5s ease forwards 1.5s;
+      animation: line-anim 1.5s ease forwards 3.5s;
     }
     & path:nth-child(5) {
       stroke-dasharray: 364;
       stroke-dashoffset: 364;
-      animation: line-anim 1.5s ease forwards 2s;
+      animation: line-anim 1.5s ease forwards 4s;
     }
     & path:nth-child(6) {
       stroke-dasharray: 510;
       stroke-dashoffset: 510;
-      animation: line-anim 1.5s ease forwards 2.5s;
+      animation: line-anim 1.5s ease forwards 4.5s;
     }
     & path:nth-child(7) {
       stroke-dasharray: 559;
       stroke-dashoffset: 559;
-      animation: line-anim 1.5s ease forwards 3s;
+      animation: line-anim 1.5s ease forwards 5s;
     }
     & path:nth-child(8) {
       stroke-dasharray: 518;
       stroke-dashoffset: 518;
-      animation: line-anim 1.5s ease forwards 3.5s;
+      animation: line-anim 1.5s ease forwards 5.5s;
     }
   }
   &-dev {
@@ -180,47 +247,47 @@
     & path:nth-child(1) {
       stroke-dasharray: 518;
       stroke-dashoffset: 518;
-      animation: line-anim 3s ease forwards 4s;
+      animation: line-anim 3s ease forwards 6s;
     }
     & path:nth-child(2) {
       stroke-dasharray: 510;
       stroke-dashoffset: 510;
-      animation: line-anim 3s ease forwards 4s;
+      animation: line-anim 3s ease forwards 6s;
     }
     & path:nth-child(3) {
       stroke-dasharray: 440;
       stroke-dashoffset: 440;
-      animation: line-anim 3s ease forwards 4s;
+      animation: line-anim 3s ease forwards 6s;
     }
     & path:nth-child(4) {
       stroke-dasharray: 510;
       stroke-dashoffset: 510;
-      animation: line-anim 3s ease forwards 4s;
+      animation: line-anim 3s ease forwards 6s;
     }
     & path:nth-child(5) {
       stroke-dasharray: 332;
       stroke-dashoffset: 332;
-      animation: line-anim 3s ease forwards 4s;
+      animation: line-anim 3s ease forwards 6s;
     }
     & path:nth-child(6) {
       stroke-dasharray: 513;
       stroke-dashoffset: 513;
-      animation: line-anim 3s ease forwards 4s;
+      animation: line-anim 3s ease forwards 6s;
     }
     & path:nth-child(7) {
       stroke-dasharray: 428;
       stroke-dashoffset: 428;
-      animation: line-anim 3s ease forwards 4s;
+      animation: line-anim 3s ease forwards 6s;
     }
     & path:nth-child(8) {
       stroke-dasharray: 510;
       stroke-dashoffset: 510;
-      animation: line-anim 3s ease forwards 4s;
+      animation: line-anim 3s ease forwards 6s;
     }
     & path:nth-child(9) {
       stroke-dasharray: 515;
       stroke-dashoffset: 515;
-      animation: line-anim 3s ease forwards 4s;
+      animation: line-anim 3s ease forwards 6s;
     }
   }
   &-image {

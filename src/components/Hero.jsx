@@ -14,7 +14,13 @@ const Hero = () => {
       </section>
       <section className="hero-banner">
         <article className="hero-banner-title">
-          <h2 className="hero-banner-hello">Hello, <span>I am</span> Arek</h2>
+          <div class="hero-banner-type">
+            <h2 class="hello">Hello, </h2>
+            <div class="col">
+              <h2 class="col-text">{" "}<span>I am</span> Arek</h2>
+              <div class="col-box">I am Arek</div>
+            </div>
+          </div>
             <div className="hero-banner-name">
               {/* Frontend */}
               <svg className="hero-frontend" width="778" height="112" viewBox="0 0 778 112" fill="none" xmlns="http://www.w3.org/2000/svg">
