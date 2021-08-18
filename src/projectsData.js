@@ -128,7 +128,7 @@ export const projects = [
     title: 'MultiWords',
     class: 'multiwords',
     shortDesc: 'Language learning app',
-    desc: 'Application wrote in TypeScript and Next, with using localStorage and redux toolkit for saving your settings. App to learn several languages at the simultaneously. We can learn words by category, repeat by writing words and reveal hidden words when you can check yourself adding points if you know words. You can play by learing in memo when one words will be for example in English and second word in German and you can play with even 10 friends. You can also make and save your own words and categories.',
+    desc: 'Application written in TypeScript and Next, with using localStorage and redux toolkit for saving your settings. App to learn several languages at the simultaneously. We can learn words by category, repeat by writing words and reveal hidden words when you can check yourself adding points if you know words. You can play by learing in memo when one words will be for example in English and second word in German and you can play with even 10 friends. You can also make and save your own words and categories.',
     images: [mw1, mw2, mw3],
     imagesMobile: [mw4, mw5, mw6],
     logo: mwl,

@@ -8,9 +8,11 @@ const Hero = () => {
   return (
     <div className="hero">
       <section className="section-title">
+        <div className="section-title-line"></div>
         <h1 className="section-title-text">
          My Portfolio
         </h1> 
+        <div className="section-title-line"></div>
       </section>
       <section className="hero-banner">
         <article className="hero-banner-title">
@@ -57,7 +59,7 @@ const Hero = () => {
             </div>
 
             <div className="hero-banner-desc">
-             Welcome ! I am glad that you are here on my porfolio website. Here you can find out about me, my story and see all my projects. So let’s go, I hope you enjoy it ! 
+             Welcome! I am glad that you are here on my porfolio website. Here you can find out about me, my story and see all my projects. So let’s go, I hope you enjoy it ! 
             </div>
 
               

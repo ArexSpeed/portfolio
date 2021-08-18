@@ -25,18 +25,28 @@ body{
 }
 
 .section-title{
-  @include center-row;
+  @include center-column;
   width: 100%;
   &-text{
     font-size: 50px;
     color: $white;
     padding: 10px;
-    border-bottom: 5px solid $primary;
     @media screen and (max-width: 768px){
       font-size: 35px;
     }
     @media screen and (max-width: 576px){
       font-size: 30px;
+    }
+  }
+  &-line {
+    width: 300px;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, $primary, transparent);
+    @media screen and (max-width: 768px){
+      width: 250px;
+    }
+    @media screen and (max-width: 576px){
+      width: 200px;
     }
   }
   &.next{
