@@ -15,7 +15,6 @@ const Projects = () => {
   return (
     <div className={`projects ${selectedProject.class}`} id="projects">
       <section className="section-title next">
-        <div className="section-title-line"></div>
         <h1 className="section-title-text">
           {selectedProject.name.toUpperCase()}
         </h1> 

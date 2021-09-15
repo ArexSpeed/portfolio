@@ -8,7 +8,6 @@ const Hero = () => {
   return (
     <div className="hero">
       <section className="section-title">
-        <div className="section-title-line"></div>
         <h1 className="section-title-text">
          My Portfolio
         </h1> 

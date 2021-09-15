@@ -21,7 +21,6 @@ const Skills = () => {
     <div className="skills" id="skills">
 
       <section className="section-title next">
-        <div className="section-title-line"></div>
         <h1 className="section-title-text">
           MY SKILLS
         </h1>

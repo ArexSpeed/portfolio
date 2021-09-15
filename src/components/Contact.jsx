@@ -19,7 +19,6 @@ const Contact = () => {
     <>
     <div className="contact" id="contact">
        <section className="section-title next">
-        <div className="section-title-line"></div>
         <h1 className="section-title-text">
           CONTACT
         </h1> 

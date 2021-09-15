@@ -11,13 +11,12 @@ import cake3 from './images/cake3.png'
 import cake4 from './images/cake4.png'
 import cake5 from './images/cake5.png'
 import cake6 from './images/cake6.png'
-import xtech1 from './images/xtech1.png'
-import xtech2 from './images/xtech2.png'
-import xtech3 from './images/xtech3.png'
-import xtech4 from './images/xtech4.png'
-import xtech5 from './images/xtech5.png'
-import xtech6 from './images/xtech6.png'
-import xtechl from './images/xtechl.png'
+import kim1 from './images/kim1.png'
+import kim2 from './images/kim2.png'
+import kim3 from './images/kim3.png'
+import kim4 from './images/kim4.png'
+import kim5 from './images/kim5.png'
+import kim6 from './images/kim6.png'
 import axo1 from './images/axo1.png'
 import axo2 from './images/axo2.png'
 import axo3 from './images/axo3.png'
@@ -108,7 +107,7 @@ export const projects = [
     logo: axol,
     stacks: ['React', 'Sass', 'Firebase'],
     website: 'https://ax-office.web.app/',
-    github: 'https://github.com/ArexSpeed/axoffice'
+    github: 'https://github.com/ArexSpeed/axoffice/tree/main/client'
   },
   {
     id: 2,
@@ -138,6 +137,19 @@ export const projects = [
   },
   {
     id: 4,
+    title: 'Kim Jestem',
+    class: 'kim',
+    shortDesc: 'Game app',
+    desc: 'Application written in TypeScript, Next and for database I used MongoDB. Kim jestem (Who I Am) is an app game for meeting with friends, where you can find out who you are from a word which has been drawn for you based on the category you choose. This app is mainly for smartphones because when you choose your word you have to turn the phone and don’t look for a screen, then ask your friends but only questions that can be answered yes or no. After answering you can always click on the screen when your word will be hidden and save your question. (Actually this app is only in Polish).',
+    images: [kim1, kim2, kim3],
+    imagesMobile: [kim4, kim5, kim6],
+    logo: mwl,
+    stacks: ['React', 'Next', 'Tailwind', 'TypeScript', 'Mongo'],
+    website: 'https://kimjestem.vercel.app/',
+    github: 'https://github.com/ArexSpeed/whoiam'
+  },
+  {
+    id: 5,
     title: 'Rounder',
     class: 'rounder',
     shortDesc: 'Competition generator',
@@ -150,7 +162,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/clickscores/tree/main/rounder'
   },
   {
-    id: 5,
+    id: 6,
     title: 'ClickScore',
     class: 'clickscore',
     shortDesc: 'Sports score simulator',
@@ -163,7 +175,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/clickscores/tree/main/clickscore'
   },
   {
-    id: 6,
+    id: 7,
     title: 'Neograd',
     class: 'neograd',
     shortDesc: 'CSS Generator',
@@ -176,7 +188,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/neogradsite'
   },
   {
-    id: 7,
+    id: 8,
     title: 'ALeague',
     class: 'aleague',
     shortDesc: 'Sport league website',
@@ -187,19 +199,6 @@ export const projects = [
     stacks: ['React', 'Sass','Node', 'Mongo', 'Firebase', 'Heroku'],
     website: 'https://alleague.web.app/',
     github: 'https://github.com/ArexSpeed/aleague'
-  },
-  {
-    id: 8,
-    title: 'XTech',
-    class: 'xtech',
-    shortDesc: 'E-commerce products website',
-    desc: 'Sample tech industry website. It contains data about products, there is shop where we can add products of interest to the basket. The website also has a simple admin panel where we can add new products that are saved to the MongoDB database.',
-    images: [xtech1, xtech2, xtech3],
-    imagesMobile: [xtech5, xtech4, xtech6],
-    logo: xtechl,
-    stacks: ['React','StyledComponent' ,'Node', 'Heroku'],
-    website: 'https://xtechstore.herokuapp.com/',
-    github: 'https://github.com/ArexSpeed/xtechstore_server'
   },
   {
     id: 9,
