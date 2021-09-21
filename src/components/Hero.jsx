@@ -2,7 +2,7 @@ import React from 'react'
 import {AiFillGithub} from 'react-icons/ai'
 import {Link} from 'react-scroll'
 import profile from '../images/heropic.png'
-import cv from '../assets/CV-Cichocki.pdf'
+import cv from '../assets/CV_Cichocki-site.pdf'
 
 const Hero = () => {
   return (
@@ -15,11 +15,11 @@ const Hero = () => {
       </section>
       <section className="hero-banner">
         <article className="hero-banner-title">
-          <div class="hero-banner-type">
-            <h2 class="hello">Hello, </h2>
-            <div class="col">
-              <h2 class="col-text">{" "}<span>I am</span> Arek</h2>
-              <div class="col-box">I am Arek</div>
+          <div className="hero-banner-type">
+            <h2 className="hello">Hello, </h2>
+            <div className="col">
+              <h2 className="col-text">{" "}<span>I am</span> Arek</h2>
+              <div className="col-box">I am Arek</div>
             </div>
           </div>
             <div className="hero-banner-name">
@@ -49,7 +49,7 @@ const Hero = () => {
             </div>
 
             <div className="hero-banner-buttons">
-              <a href={cv} download="CV-Cichocki" className="button-cv">
+              <a href={cv} download="CV_Cichocki-site" className="button-cv">
                 <span>CV</span>
               </a>
               <a href="https://github.com/ArexSpeed" target="_blank" rel="noreferrer"  className="button-git">
