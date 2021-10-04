@@ -58,6 +58,11 @@
     margin-top: -50px;
     overflow: scroll;
     cursor: ns-resize;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     &-box {
       width: 700px;
       min-height: 500px;
@@ -75,9 +80,6 @@
     }
     &-text {
       font-size: 20px;
-      // @media screen and (max-width: 768px){
-      //   font-size: 16px;
-      // }
     }
   }
 }

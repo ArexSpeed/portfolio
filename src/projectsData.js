@@ -124,6 +124,19 @@ export const projects = [
   },
   {
     id: 3,
+    title: 'ALeague',
+    class: 'aleague',
+    shortDesc: 'Sport league website',
+    desc: 'Website for league competition with separate subpages for each team with its details, statistics. In the history section you can also check the tables from all seasons and check all H2H between two teams. There is also a voting system after which the results are shown with an interesting effect. This website is created mainly for learning how to create own API and manage and operate it.',
+    images: [aleague1, aleague2, aleague3],
+    imagesMobile: [aleague4,aleague5, aleague6],
+    logo: aleaguel,
+    stacks: ['React', 'Sass','Node', 'Mongo', 'Firebase', 'Heroku'],
+    website: 'https://alleague.web.app/',
+    github: 'https://github.com/ArexSpeed/aleague'
+  },
+  {
+    id: 4,
     title: 'MultiWords',
     class: 'multiwords',
     shortDesc: 'Language learning app',
@@ -136,7 +149,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/multiwords'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Kim Jestem',
     class: 'kim',
     shortDesc: 'Game app',
@@ -149,7 +162,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/whoiam'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Rounder',
     class: 'rounder',
     shortDesc: 'Competition generator',
@@ -162,7 +175,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/clickscores/tree/main/rounder'
   },
   {
-    id: 6,
+    id: 7,
     title: 'ClickScore',
     class: 'clickscore',
     shortDesc: 'Sports score simulator',
@@ -175,7 +188,7 @@ export const projects = [
     github: 'https://github.com/ArexSpeed/clickscores/tree/main/clickscore'
   },
   {
-    id: 7,
+    id: 8,
     title: 'Neograd',
     class: 'neograd',
     shortDesc: 'CSS Generator',
@@ -186,19 +199,6 @@ export const projects = [
     stacks: ['React', 'Sass'],
     website: 'https://neogradcss.web.app/',
     github: 'https://github.com/ArexSpeed/neogradsite'
-  },
-  {
-    id: 8,
-    title: 'ALeague',
-    class: 'aleague',
-    shortDesc: 'Sport league website',
-    desc: 'Website for league competition with separate subpages for each team with its details, statistics. In the history section you can also check the tables from all seasons and check all H2H between two teams. There is also a voting system after which the results are shown with an interesting effect. This website is created mainly for learning how to create own API and manage and operate it.',
-    images: [aleague1, aleague2, aleague3],
-    imagesMobile: [aleague4,aleague5, aleague6],
-    logo: aleaguel,
-    stacks: ['React', 'Sass','Node', 'Mongo', 'Firebase', 'Heroku'],
-    website: 'https://alleague.web.app/',
-    github: 'https://github.com/ArexSpeed/aleague'
   },
   {
     id: 9,
